@@ -25,32 +25,32 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 
 ## Tentative course schedule (Fall 2022)
-|     | Date   | Class            | Topic                                                                                                          | 
-| --- | ------ | ---------------- | -------------------------------------------------------------------------------------------------------------- | 
-| Tue | 30-Aug | 1                | Welcome to the Machine Learning                                                                                | 
-| Thu | 1-Sep  | 2                | ML introduction                                                                                                | 
-| Tue | 6-Sep  | 3                | Python Crash Course                                                                                            | 
-| Thu | 8-Sep  | 4                | Machine learning concepts (Part 1: Overfitting, Bias-variance trade off, Evaluation metrics, Cross validation) | 
-| Tue | 13-Sep | 5                | Machine learning concepts (Part 2: loss functions + Gradient descent and SGD)                                  | 
-| Thu | 15-Sep | 6                | Linear regression (application)                                                                                | 
-| Tue | 20-Sep | 7                | Polynomial regression (theory and application)                                                                 | 
-| Thu | 22-Sep | 8                | Regularization (Ridge + Lasso + Elastic Net) - Theory                                                          | 
-| Tue | 27-Sep | 9                | Regularization (Ridge + Lasso + Elastic Net) - Application                                                     | 
-| Thu | 29-Sep | 10               | Classification metrics + Logistic regression (Theory)                                                          | 
-| Tue | 4-Oct  | 11               | Classification metrics + Logistic regression (Python)                                                          | 
-| Thu | 6-Oct  | 12               | KNN regression and classification (Theory)                                                                     | 
-| Thu | 13-Oct | 13               | KNN Classification (Python)                                                                                    | 
-| Tue | 18-Oct | 14               | Support Vector Machines (SVC & SVR theory)                                                                     | 
-| Thu | 20-Oct | 15               | Support Vector Machines (SVC & SVR theory)                                                                     | 
-| Thu | 27-Oct | 17               | SVM Regression (Python)                                                                                        |
-| Tue | 1-Nov  | 18               | Decision Tree (theory)                                                                                         |
-| Thu | 3-Nov  | 19               | Decision Tree (Python)                                                                                         |
-| Tue | 8-Nov  | 20               | Random Forest (theory)                                                                                         |
-| Thu | 10-Nov | 21               | Random Forest (Python)                                                                                         |
-| Tue | 15-Nov | 22               | Boosting ( Theory + Python)                                                                                    |
-| Thu | 17-Nov | 23               | Clustering : K-mean and Hirearchichal (Theory)                                                                 |
-| Tue | 22-Nov | 24               | Clustering : K-mean and Hirearchichal (Python)                                                                 |
-| Tue | 29-Nov | 25               | Dimensionality Reduction: PCA (Theory)                                                                         |
-| Thu | 1-Dec  | 26               | Dimensionality Reduction: PCA (Python)                                                                         |
-| Tue | 6-Dec  | 27               | CFA research challenge                                                                                         |
-| Thu | 8-Dec  | 28               | Final project Q&A + What's next  
+| Date   | Class            | Topic                                                                                                          | 
+| ------ | ---------------- | -------------------------------------------------------------------------------------------------------------- | 
+| 30-Aug | 1  | Welcome to the Machine Learning                                                                                |
+| 1-Sep  | 2  | ML introduction                                                                                                |
+| 6-Sep  | 3  | Python Crash Course                                                                                            |
+| 8-Sep  | 4  | Machine learning concepts (Part 1: Overfitting, Bias-variance trade off, Evaluation metrics, Cross validation) |
+| 13-Sep | 5  | Machine learning concepts (Part 2: loss functions + Gradient descent and SGD)                                  |
+| 15-Sep | 6  | Linear regression (application)                                                                                |
+| 20-Sep | 7  | Polynomial regression (theory and application)                                                                 |
+| 22-Sep | 8  | Regularization (Ridge + Lasso + Elastic Net) - Theory                                                          |
+| 27-Sep | 9  | Regularization (Ridge + Lasso + Elastic Net) - Application                                                     |
+| 29-Sep | 10 | Classification metrics + Logistic regression (Theory)                                                          |
+| 4-Oct  | 11 | Classification metrics + Logistic regression (Python)                                                          |
+| 6-Oct  | 12 | KNN regression and classification (Theory)                                                                     |
+| 13-Oct | 13 | KNN Classification (Python)                                                                                    |
+| 18-Oct | 14 | Support Vector Machines (SVC & SVR theory)                                                                     |
+| 20-Oct | 15 | Support Vector Machines (SVC & SVR theory)                                                                     |
+| 25-Oct | 16 | SVM Classification (Python)                                                                                    |
+| 27-Oct | 17 | SVM Regression (Python)                                                                                        |
+| 1-Nov  | 18 | Decision Tree (theory)                                                                                         |
+| 3-Nov  | 19 | Decision Tree (Python)                                                                                         |
+| 8-Nov  | 20 | Random Forest (theory)                                                                                         |
+| 10-Nov | 21 | Random Forest (Python)                                                                                         |
+| 15-Nov | 22 | Boosting ( Theory + Python)                                                                                    |
+| 17-Nov | 23 | Clustering : K-mean and Hierarchical (Theory)                                                                  |
+| 22-Nov | 24 | Clustering : K-mean and Hierarchical (Python)                                                                  |
+| 29-Nov | 25 | Dimensionality Reduction: PCA (Theory)                                                                         |
+| 1-Dec  | 26 | Dimensionality Reduction: PCA (Python)                                                                         |
+| 6-Dec  | 27 | CFA research challenge                                                                                         |
