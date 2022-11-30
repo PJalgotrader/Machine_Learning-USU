@@ -43,5 +43,4 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 | Boosting                                                       |
 | Dimensionality Reduction: PCA                                                           |
 | Clustering : K-mean and Hirearchichal                                                  |
-|--------------------------------------------------------------------------------------------------|
 | PyCaret me!                                                                                      |
