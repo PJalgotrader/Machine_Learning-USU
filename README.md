@@ -1,5 +1,3 @@
-![Logo](https://upload.wikimedia.org/wikipedia/commons/4/44/Huntsman-Wordmark-with-USU-Blue.gif?style=centerme) 
-
 
 # Machine Learning
 
@@ -45,3 +43,8 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 | Dimensionality Reduction: PCA                                                           |
 | Clustering : K-mean and Hirearchichal                                                  |
 | PyCaret me!                                                                                      |
+
+
+
+![Logo](https://drive.google.com/drive/u/2/folders/11IZAnca4yP5O1ewqLpJCvbITYJgsQIph) 
+
