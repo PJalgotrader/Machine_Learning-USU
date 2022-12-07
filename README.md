@@ -1,11 +1,9 @@
-![Logo](https://upload.wikimedia.org/wikipedia/commons/4/44/Huntsman-Wordmark-with-USU-Blue.gif?style=centerme) 
-
 
 # Machine Learning
 
 Repository for machine learning courses owned and maintained by prof. Jahangiry
 
-* The [main](https://github.com/PJalgotrader/Machine_Learning-USU/tree/main) branch contains some general machine learning contents including data, cheatsheets, Google Colab tutorials, PyCaret and etc.
+* The [main](https://github.com/PJalgotrader/Machine_Learning-USU/tree/main) branch contains some general contents including **Python crash course**, data, cheatsheets, Google Colab tutorials, **PyCaret**, and etc.
 * To get access to the materials for older semesters, please check out existing branches (spring22, fall22, ...) 
 * Latest lecture slides and Python notebooks should be found under the [fall22](https://github.com/PJalgotrader/Machine_Learning-USU/tree/fall22) branch!
 
@@ -45,3 +43,8 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 | Dimensionality Reduction: PCA                                                           |
 | Clustering : K-mean and Hirearchichal                                                  |
 | PyCaret me!                                                                                      |
+
+
+
+![Logo](https://drive.google.com/file/d/11_3G4oXMFVWmacGY5au8cNWI6PZhlxQJ/view?usp=share_link) 
+
