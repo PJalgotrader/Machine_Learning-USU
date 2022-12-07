@@ -4,8 +4,8 @@
 Repository for machine learning courses owned and maintained by prof. Jahangiry
 
 * The [main](https://github.com/PJalgotrader/Machine_Learning-USU/tree/main) branch contains some general contents including **Python crash course**, data, cheatsheets, Google Colab tutorials, **PyCaret**, and etc.
-* To get access to the materials for older semesters, please check out existing branches (spring22, fall22, ...) 
-* Latest lecture slides and Python notebooks should be found under the [fall22](https://github.com/PJalgotrader/Machine_Learning-USU/tree/fall22) branch!
+* To get access to the materials for older semesters, please check out existing branches (2022-1-spring, 2022-2-fall, ...) 
+* Latest lecture slides and Python notebooks should be found under the [2022-2-fall](https://github.com/PJalgotrader/Machine_Learning-USU/tree/fall22) branch!
 
 
 
