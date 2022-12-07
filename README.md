@@ -8,11 +8,14 @@ Repository for machine learning courses owned and maintained by prof. Jahangiry
 * Latest lecture slides and Python notebooks should be found under the [fall22](https://github.com/PJalgotrader/Machine_Learning-USU/tree/fall22) branch!
 
 
-## 🚀 About Me
+
+
+# 🚀 About Me
 
 Pedram Jahangiry, CFA,  is a Professional Practice Assistant Professor of Data Analytics and Information Systems in the Huntsman School of Business at Utah State University. Prior to joining the Huntsman School in 2018, Pedram was a research associate within Financial Modeling Group at BlackRock NYC. His current research is involved in machine learning, deep learning and time series forecasting. 
 Pedram is one of the project mentors at the [Analytics Solutions Center](https://huntsman.usu.edu/asc/index) where they provide significant experiential learning opportunities for students from across USU’s Logan and Statewide campuses by working with corporate partners on analytics projects.
 
+![Logo](https://drive.google.com/file/d/11_3G4oXMFVWmacGY5au8cNWI6PZhlxQJ/view?usp=share_link) 
 
 
 ## 🔗 Links
@@ -46,5 +49,4 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 
 
-![Logo](https://drive.google.com/file/d/11_3G4oXMFVWmacGY5au8cNWI6PZhlxQJ/view?usp=share_link) 
 
