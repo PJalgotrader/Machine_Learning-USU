@@ -1,9 +1,14 @@
-Here is the link to my YouTube playlist for Google Colab! https://www.youtube.com/playlist?list=PL2GWo47BFyUOsj5rxrF9s6vRn0HCBEhpW
-
+Here is the link to my YouTube playlist for Python Crash course! https://www.youtube.com/playlist?list=PL2GWo47BFyUPsqzaOdIdZlAwQmrXkSJxX
 **Topics**: 
-1. Google Colab: JUmpstart!
-2. Google Colab Basics
-3. Google Colab Tricks
+1. Installation!
+2. What is Python notebook!
+3. Python Basics
+4. Numpy
+5. Pandas
+6. Matplotlib
+7. Pandas visualization
+8. Seaborn
+9. Time series 
 
 
 ## 🔗 Links
