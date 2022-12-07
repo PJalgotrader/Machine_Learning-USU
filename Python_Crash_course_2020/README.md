@@ -1,4 +1,6 @@
 Here is the link to my YouTube playlist for Python Crash course! https://www.youtube.com/playlist?list=PL2GWo47BFyUPsqzaOdIdZlAwQmrXkSJxX
+
+
 **Topics**: 
 1. Installation!
 2. What is Python notebook!
