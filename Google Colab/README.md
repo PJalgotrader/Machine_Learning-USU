@@ -1,6 +1,6 @@
 Here is the link to my YouTube playlist for Google Colab! https://www.youtube.com/playlist?list=PL2GWo47BFyUOsj5rxrF9s6vRn0HCBEhpW
 
-Topics: 
+**Topics**: 
 1. Google Colab: JUmpstart!
 2. Google Colab Basics
 3. Google Colab Tricks
