@@ -46,5 +46,5 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 
 
-![Logo](https://drive.google.com/drive/u/2/folders/11IZAnca4yP5O1ewqLpJCvbITYJgsQIph) 
+![Logo](https://drive.google.com/file/d/11_3G4oXMFVWmacGY5au8cNWI6PZhlxQJ/view?usp=share_link) 
 
