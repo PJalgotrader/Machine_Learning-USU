@@ -25,6 +25,14 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedram-jahangiry-cfa-5778015a)
 
 
+<pre>
+
+
+
+
+
+</pre>
+
 ***
 
 ## Topics:
