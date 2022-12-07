@@ -30,7 +30,7 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 ## Topics:
 
-| Topics                                                                                     |
+| Machine Learning Topics                                                                              |
 |--------------------------------------------------------------------------------------------------|
 | ML introduction                                                                                  |
 | Python Crash Course                                                                              |
