@@ -1,3 +1,5 @@
+![ML cover](https://user-images.githubusercontent.com/19335954/210504261-55016ce4-6d1e-4f32-9077-6af513d9f924.png)
+
 
 # Machine Learning
 
@@ -54,7 +56,6 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 
 
-![ML cover](https://user-images.githubusercontent.com/19335954/210504261-55016ce4-6d1e-4f32-9077-6af513d9f924.png)
 
 <img src="images/Jahangirylogo.png" width=150 align="right">
 
