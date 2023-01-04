@@ -4,7 +4,7 @@
 Repository for machine learning courses owned and maintained by prof. Jahangiry
 
 * The [main](https://github.com/PJalgotrader/Machine_Learning-USU/tree/main) branch contains some general contents including **Python crash course**, data, cheatsheets, Google Colab tutorials, **PyCaret**, and etc.
-* Latest lecture slides and Python notebooks should be found under the **New slides** in the Lecture folder.
+* You can find the latest lecture slides and Python notebooks in the **New slides** folder under Lectures. 
 
 
 
