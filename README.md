@@ -42,8 +42,8 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 |Module 5- Linear Regression (Machine Learning approach)|
 |Module 6- Penalized Regression (Ridge, LASSO, Elastic Net)|
 |Module 7- Logistic Regression |
-|Module 8- KNN|
-|Module 9- CART |
+|Module 8- K-Nearest Neighbors (KNN) |
+|Module 9- Classification and Regression Trees (CART) |
 |Module 10- Bagging and Boosting |
 |Module 11- Dimensionality Reduction (PCA)|
 |Module 12- Clustering (KMeans – Hierarchical) | 
