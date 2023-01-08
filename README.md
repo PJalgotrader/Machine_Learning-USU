@@ -35,24 +35,18 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 | Machine Learning Topics                                                                              |
 |--------------------------------------------------------------------------------------------------|
-| ML introduction                                                                                  |
-| Python Crash Course                                                                              |
-| Machine learning concepts (Part 1: Overfitting, Bias-variance trade off, Evaluation metric)      |
-| Machine learning concepts (Part 2:  Cross validation+ loss functions + Gradient descent and SGD) |
-| Machine learning concepts (Part 3: Putting it all together!)                                     |
-| Linear regression                                                          |
-| Polynomial regression                                              |
-| Regularization (Ridge + Lasso + Elastic Net)                                           |
-| Logistic regression                                                                      |
-| Classification metrics                                                                           |
-| KNN regression and classification (Theory)                                                       |
-| Support Vector Machines                                       |
-| Decision Tree                                                                 |
-| Random Forest                                                                           |
-| Boosting                                                       |
-| Dimensionality Reduction: PCA                                                           |
-| Clustering : K-mean and Hirearchichal                                                  |
-| PyCaret me!                                                                                      |
+|Module 1- Introduction to Deep Learning|
+|Module 2- Setting up Machine Learning Environment|
+|Module 3- Linear Regression (Econometrics approach)|
+|Module 4- Machine Learning Fundamentals|
+|Module 5- Linear Regression (Machine Learning approach)|
+|Module 6- Penalized Regression (Ridge, LASSO, Elastic Net)|
+|Module 7- Logistic Regression |
+|Module 8- KNN|
+|Module 9- CART |
+|Module 10- Bagging and Boosting |
+|Module 11- Dimensionality Reduction (PCA)|
+|Module 12- Clustering (KMeans – Hierarchical) | 
 
 
 
