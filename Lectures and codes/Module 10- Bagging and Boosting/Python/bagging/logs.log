@@ -3514,3 +3514,830 @@ dtype: int64}],
 2023-11-02 15:18:02,137:INFO:Soft dependency imported: xgboost: 2.0.0
 2023-11-02 15:18:02,141:INFO:Soft dependency imported: catboost: 1.2.2
 2023-11-02 15:18:02,142:INFO:setup() successfully completed in 3.66s...............
+2023-11-02 15:18:34,544:INFO:gpu_param set to False
+2023-11-02 15:18:34,631:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-02 15:18:34,633:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-02 15:18:34,707:INFO:Soft dependency imported: xgboost: 2.0.0
+2023-11-02 15:18:34,725:INFO:Soft dependency imported: catboost: 1.2.2
+2023-11-02 15:18:36,504:INFO:Initializing create_model()
+2023-11-02 15:18:36,505:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-11-02 15:18:36,505:INFO:Checking exceptions
+2023-11-02 15:18:36,531:INFO:Importing libraries
+2023-11-02 15:18:36,531:INFO:Copying training dataset
+2023-11-02 15:18:36,550:INFO:Defining folds
+2023-11-02 15:18:36,550:INFO:Declaring metric variables
+2023-11-02 15:18:36,554:INFO:Importing untrained model
+2023-11-02 15:18:36,558:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:18:36,558:INFO:Starting cross validation
+2023-11-02 15:18:36,573:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:19:00,738:INFO:Calculating mean and std
+2023-11-02 15:19:00,738:INFO:Creating metrics dataframe
+2023-11-02 15:19:00,738:INFO:Finalizing model
+2023-11-02 15:19:02,852:INFO:Uploading results into container
+2023-11-02 15:19:02,854:INFO:Uploading model into container now
+2023-11-02 15:19:02,860:INFO:_master_model_container: 1
+2023-11-02 15:19:02,867:INFO:_display_container: 2
+2023-11-02 15:19:02,867:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:19:02,867:INFO:create_model() successfully completed......................................
+2023-11-02 15:19:06,831:INFO:Initializing create_model()
+2023-11-02 15:19:06,831:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={'hyperparameters': {'max_depth': 5}})
+2023-11-02 15:19:06,831:INFO:Checking exceptions
+2023-11-02 15:19:06,857:INFO:Importing libraries
+2023-11-02 15:19:06,857:INFO:Copying training dataset
+2023-11-02 15:19:06,874:INFO:Defining folds
+2023-11-02 15:19:06,874:INFO:Declaring metric variables
+2023-11-02 15:19:06,879:INFO:Importing untrained model
+2023-11-02 15:20:05,238:INFO:Initializing tune_model()
+2023-11-02 15:20:05,238:INFO:tune_model(estimator=rf, fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={'hyperparameters': {'max_depth': 5}}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:20:05,239:INFO:Checking exceptions
+2023-11-02 15:20:13,525:INFO:Initializing tune_model()
+2023-11-02 15:20:13,525:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={'hyperparameters': {'max_depth': 5}}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:20:13,525:INFO:Checking exceptions
+2023-11-02 15:20:13,559:INFO:Copying training dataset
+2023-11-02 15:20:13,570:INFO:Checking base model
+2023-11-02 15:20:13,570:INFO:Base model : Random Forest Classifier
+2023-11-02 15:20:13,576:INFO:Declaring metric variables
+2023-11-02 15:20:13,581:INFO:Defining Hyperparameters
+2023-11-02 15:20:13,770:INFO:Tuning with n_jobs=-1
+2023-11-02 15:20:13,772:INFO:Initializing RandomizedSearchCV
+2023-11-02 15:22:25,970:INFO:Initializing tune_model()
+2023-11-02 15:22:25,970:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=None, round=4, n_iter=10, custom_grid={'class_weight': ['balanced']}, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:22:25,970:INFO:Checking exceptions
+2023-11-02 15:22:25,998:INFO:Copying training dataset
+2023-11-02 15:22:26,007:INFO:Checking base model
+2023-11-02 15:22:26,007:INFO:Base model : Random Forest Classifier
+2023-11-02 15:22:26,011:INFO:Declaring metric variables
+2023-11-02 15:22:26,015:INFO:Defining Hyperparameters
+2023-11-02 15:22:26,159:INFO:custom_grid: {'actual_estimator__class_weight': ['balanced']}
+2023-11-02 15:22:26,160:INFO:Tuning with n_jobs=-1
+2023-11-02 15:22:26,160:INFO:Initializing RandomizedSearchCV
+2023-11-02 15:22:41,124:INFO:best_params: {'actual_estimator__class_weight': 'balanced'}
+2023-11-02 15:22:41,124:INFO:Hyperparameter search completed
+2023-11-02 15:22:41,124:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:22:41,124:INFO:Initializing create_model()
+2023-11-02 15:22:41,124:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000274B8D5B100>, model_only=True, return_train_score=False, kwargs={'class_weight': 'balanced'})
+2023-11-02 15:22:41,124:INFO:Checking exceptions
+2023-11-02 15:22:41,124:INFO:Importing libraries
+2023-11-02 15:22:41,124:INFO:Copying training dataset
+2023-11-02 15:22:41,141:INFO:Defining folds
+2023-11-02 15:22:41,141:INFO:Declaring metric variables
+2023-11-02 15:22:41,143:INFO:Importing untrained model
+2023-11-02 15:22:41,143:INFO:Declaring custom model
+2023-11-02 15:22:41,143:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:22:41,158:INFO:Starting cross validation
+2023-11-02 15:22:41,161:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:22:58,450:INFO:Calculating mean and std
+2023-11-02 15:22:58,451:INFO:Creating metrics dataframe
+2023-11-02 15:22:58,457:INFO:Finalizing model
+2023-11-02 15:23:01,071:INFO:Uploading results into container
+2023-11-02 15:23:01,073:INFO:Uploading model into container now
+2023-11-02 15:23:01,074:INFO:_master_model_container: 2
+2023-11-02 15:23:01,074:INFO:_display_container: 3
+2023-11-02 15:23:01,075:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:23:01,075:INFO:create_model() successfully completed......................................
+2023-11-02 15:23:01,246:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:23:01,246:INFO:choose_better activated
+2023-11-02 15:23:01,253:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:23:01,254:INFO:Initializing create_model()
+2023-11-02 15:23:01,255:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-11-02 15:23:01,255:INFO:Checking exceptions
+2023-11-02 15:23:01,257:INFO:Importing libraries
+2023-11-02 15:23:01,257:INFO:Copying training dataset
+2023-11-02 15:23:01,281:INFO:Defining folds
+2023-11-02 15:23:01,281:INFO:Declaring metric variables
+2023-11-02 15:23:01,281:INFO:Importing untrained model
+2023-11-02 15:23:01,281:INFO:Declaring custom model
+2023-11-02 15:23:01,282:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:23:01,282:INFO:Starting cross validation
+2023-11-02 15:23:01,284:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:23:20,324:INFO:Calculating mean and std
+2023-11-02 15:23:20,324:INFO:Creating metrics dataframe
+2023-11-02 15:23:20,324:INFO:Finalizing model
+2023-11-02 15:23:22,324:INFO:Uploading results into container
+2023-11-02 15:23:22,324:INFO:Uploading model into container now
+2023-11-02 15:23:22,324:INFO:_master_model_container: 3
+2023-11-02 15:23:22,324:INFO:_display_container: 4
+2023-11-02 15:23:22,324:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:23:22,324:INFO:create_model() successfully completed......................................
+2023-11-02 15:23:22,424:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:23:22,424:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8138
+2023-11-02 15:23:22,424:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8129
+2023-11-02 15:23:22,424:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) is best model
+2023-11-02 15:23:22,424:INFO:choose_better completed
+2023-11-02 15:23:22,424:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-02 15:23:22,444:INFO:_master_model_container: 3
+2023-11-02 15:23:22,444:INFO:_display_container: 3
+2023-11-02 15:23:22,445:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:23:22,445:INFO:tune_model() successfully completed......................................
+2023-11-02 15:36:46,752:INFO:Initializing tune_model()
+2023-11-02 15:36:46,752:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=5, round=4, n_iter=10, custom_grid={'class_weight': ['balanced'], 'max_depth': [10]}, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:36:46,752:INFO:Checking exceptions
+2023-11-02 15:36:46,784:INFO:Copying training dataset
+2023-11-02 15:36:46,795:INFO:Checking base model
+2023-11-02 15:36:46,796:INFO:Base model : Random Forest Classifier
+2023-11-02 15:36:46,800:INFO:Declaring metric variables
+2023-11-02 15:36:46,800:INFO:Defining Hyperparameters
+2023-11-02 15:36:47,038:INFO:custom_grid: {'actual_estimator__class_weight': ['balanced'], 'actual_estimator__max_depth': [10]}
+2023-11-02 15:36:47,038:INFO:Tuning with n_jobs=-1
+2023-11-02 15:36:47,039:INFO:Initializing RandomizedSearchCV
+2023-11-02 15:36:55,527:INFO:best_params: {'actual_estimator__max_depth': 10, 'actual_estimator__class_weight': 'balanced'}
+2023-11-02 15:36:55,527:INFO:Hyperparameter search completed
+2023-11-02 15:36:55,527:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:36:55,527:INFO:Initializing create_model()
+2023-11-02 15:36:55,527:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000274C8008910>, model_only=True, return_train_score=False, kwargs={'max_depth': 10, 'class_weight': 'balanced'})
+2023-11-02 15:36:55,527:INFO:Checking exceptions
+2023-11-02 15:36:55,527:INFO:Importing libraries
+2023-11-02 15:36:55,527:INFO:Copying training dataset
+2023-11-02 15:36:55,546:INFO:Defining folds
+2023-11-02 15:36:55,546:INFO:Declaring metric variables
+2023-11-02 15:36:55,546:INFO:Importing untrained model
+2023-11-02 15:36:55,546:INFO:Declaring custom model
+2023-11-02 15:36:55,558:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:36:55,567:INFO:Starting cross validation
+2023-11-02 15:36:55,570:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:37:02,927:INFO:Calculating mean and std
+2023-11-02 15:37:02,927:INFO:Creating metrics dataframe
+2023-11-02 15:37:02,927:INFO:Finalizing model
+2023-11-02 15:37:04,087:INFO:Uploading results into container
+2023-11-02 15:37:04,089:INFO:Uploading model into container now
+2023-11-02 15:37:04,089:INFO:_master_model_container: 4
+2023-11-02 15:37:04,089:INFO:_display_container: 4
+2023-11-02 15:37:04,089:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=10, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:37:04,089:INFO:create_model() successfully completed......................................
+2023-11-02 15:37:04,207:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:37:04,207:INFO:choose_better activated
+2023-11-02 15:37:04,210:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:37:04,210:INFO:Initializing create_model()
+2023-11-02 15:37:04,210:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-11-02 15:37:04,210:INFO:Checking exceptions
+2023-11-02 15:37:04,210:INFO:Importing libraries
+2023-11-02 15:37:04,210:INFO:Copying training dataset
+2023-11-02 15:37:04,225:INFO:Defining folds
+2023-11-02 15:37:04,225:INFO:Declaring metric variables
+2023-11-02 15:37:04,225:INFO:Importing untrained model
+2023-11-02 15:37:04,225:INFO:Declaring custom model
+2023-11-02 15:37:04,225:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:37:04,225:INFO:Starting cross validation
+2023-11-02 15:37:04,225:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:37:11,908:INFO:Calculating mean and std
+2023-11-02 15:37:11,908:INFO:Creating metrics dataframe
+2023-11-02 15:37:11,908:INFO:Finalizing model
+2023-11-02 15:37:13,893:INFO:Uploading results into container
+2023-11-02 15:37:13,893:INFO:Uploading model into container now
+2023-11-02 15:37:13,893:INFO:_master_model_container: 5
+2023-11-02 15:37:13,893:INFO:_display_container: 5
+2023-11-02 15:37:13,893:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:37:13,893:INFO:create_model() successfully completed......................................
+2023-11-02 15:37:13,993:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:37:13,993:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8141
+2023-11-02 15:37:13,993:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=10, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.7886
+2023-11-02 15:37:13,993:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) is best model
+2023-11-02 15:37:13,993:INFO:choose_better completed
+2023-11-02 15:37:13,993:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-02 15:37:14,009:INFO:_master_model_container: 5
+2023-11-02 15:37:14,009:INFO:_display_container: 4
+2023-11-02 15:37:14,009:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:37:14,009:INFO:tune_model() successfully completed......................................
+2023-11-02 15:37:24,093:INFO:Initializing plot_model()
+2023-11-02 15:37:24,093:INFO:plot_model(plot=parameter, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:37:24,093:INFO:Checking exceptions
+2023-11-02 15:37:24,149:INFO:Preloading libraries
+2023-11-02 15:37:24,229:INFO:Copying training dataset
+2023-11-02 15:37:24,229:INFO:Plot type: parameter
+2023-11-02 15:37:24,229:INFO:Visual Rendered Successfully
+2023-11-02 15:37:24,339:INFO:plot_model() successfully completed......................................
+2023-11-02 15:38:13,446:INFO:Initializing tune_model()
+2023-11-02 15:38:13,446:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=5, round=4, n_iter=10, custom_grid={'class_weight': ['balanced']}, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:38:13,446:INFO:Checking exceptions
+2023-11-02 15:38:13,476:INFO:Copying training dataset
+2023-11-02 15:38:13,489:INFO:Checking base model
+2023-11-02 15:38:13,489:INFO:Base model : Random Forest Classifier
+2023-11-02 15:38:13,494:INFO:Declaring metric variables
+2023-11-02 15:38:13,499:INFO:Defining Hyperparameters
+2023-11-02 15:38:13,679:INFO:custom_grid: {'actual_estimator__class_weight': ['balanced']}
+2023-11-02 15:38:13,679:INFO:Tuning with n_jobs=-1
+2023-11-02 15:38:13,679:INFO:Initializing RandomizedSearchCV
+2023-11-02 15:38:20,230:INFO:best_params: {'actual_estimator__class_weight': 'balanced'}
+2023-11-02 15:38:20,230:INFO:Hyperparameter search completed
+2023-11-02 15:38:20,230:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:38:20,230:INFO:Initializing create_model()
+2023-11-02 15:38:20,230:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000274C8071EB0>, model_only=True, return_train_score=False, kwargs={'class_weight': 'balanced'})
+2023-11-02 15:38:20,230:INFO:Checking exceptions
+2023-11-02 15:38:20,230:INFO:Importing libraries
+2023-11-02 15:38:20,230:INFO:Copying training dataset
+2023-11-02 15:38:20,247:INFO:Defining folds
+2023-11-02 15:38:20,247:INFO:Declaring metric variables
+2023-11-02 15:38:20,247:INFO:Importing untrained model
+2023-11-02 15:38:20,247:INFO:Declaring custom model
+2023-11-02 15:38:20,247:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:38:20,268:INFO:Starting cross validation
+2023-11-02 15:38:20,269:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:38:27,176:INFO:Calculating mean and std
+2023-11-02 15:38:27,177:INFO:Creating metrics dataframe
+2023-11-02 15:38:27,177:INFO:Finalizing model
+2023-11-02 15:38:29,050:INFO:Uploading results into container
+2023-11-02 15:38:29,051:INFO:Uploading model into container now
+2023-11-02 15:38:29,052:INFO:_master_model_container: 6
+2023-11-02 15:38:29,052:INFO:_display_container: 5
+2023-11-02 15:38:29,052:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:38:29,052:INFO:create_model() successfully completed......................................
+2023-11-02 15:38:29,160:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:38:29,160:INFO:choose_better activated
+2023-11-02 15:38:29,160:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:38:29,160:INFO:Initializing create_model()
+2023-11-02 15:38:29,160:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-11-02 15:38:29,160:INFO:Checking exceptions
+2023-11-02 15:38:29,160:INFO:Importing libraries
+2023-11-02 15:38:29,160:INFO:Copying training dataset
+2023-11-02 15:38:29,175:INFO:Defining folds
+2023-11-02 15:38:29,175:INFO:Declaring metric variables
+2023-11-02 15:38:29,175:INFO:Importing untrained model
+2023-11-02 15:38:29,175:INFO:Declaring custom model
+2023-11-02 15:38:29,175:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:38:29,175:INFO:Starting cross validation
+2023-11-02 15:38:29,175:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:38:36,892:INFO:Calculating mean and std
+2023-11-02 15:38:36,892:INFO:Creating metrics dataframe
+2023-11-02 15:38:36,892:INFO:Finalizing model
+2023-11-02 15:38:38,826:INFO:Uploading results into container
+2023-11-02 15:38:38,826:INFO:Uploading model into container now
+2023-11-02 15:38:38,826:INFO:_master_model_container: 7
+2023-11-02 15:38:38,826:INFO:_display_container: 6
+2023-11-02 15:38:38,826:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:38:38,826:INFO:create_model() successfully completed......................................
+2023-11-02 15:38:38,933:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:38:38,933:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8141
+2023-11-02 15:38:38,933:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8132
+2023-11-02 15:38:38,933:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) is best model
+2023-11-02 15:38:38,933:INFO:choose_better completed
+2023-11-02 15:38:38,933:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-02 15:38:38,942:INFO:_master_model_container: 7
+2023-11-02 15:38:38,942:INFO:_display_container: 5
+2023-11-02 15:38:38,942:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:38:38,942:INFO:tune_model() successfully completed......................................
+2023-11-02 15:39:27,894:INFO:Initializing tune_model()
+2023-11-02 15:39:27,894:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=5, round=4, n_iter=10, custom_grid={'class_weight': ['balanced']}, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:39:27,894:INFO:Checking exceptions
+2023-11-02 15:39:27,919:INFO:Copying training dataset
+2023-11-02 15:39:27,928:INFO:Checking base model
+2023-11-02 15:39:27,929:INFO:Base model : Random Forest Classifier
+2023-11-02 15:39:27,933:INFO:Declaring metric variables
+2023-11-02 15:39:27,938:INFO:Defining Hyperparameters
+2023-11-02 15:39:28,107:INFO:custom_grid: {'actual_estimator__class_weight': ['balanced']}
+2023-11-02 15:39:28,107:INFO:Tuning with n_jobs=-1
+2023-11-02 15:39:28,107:INFO:Initializing RandomizedSearchCV
+2023-11-02 15:39:34,743:INFO:best_params: {'actual_estimator__class_weight': 'balanced'}
+2023-11-02 15:39:34,743:INFO:Hyperparameter search completed
+2023-11-02 15:39:34,743:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:39:34,743:INFO:Initializing create_model()
+2023-11-02 15:39:34,743:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000274C81AEC70>, model_only=True, return_train_score=False, kwargs={'class_weight': 'balanced'})
+2023-11-02 15:39:34,743:INFO:Checking exceptions
+2023-11-02 15:39:34,743:INFO:Importing libraries
+2023-11-02 15:39:34,743:INFO:Copying training dataset
+2023-11-02 15:39:34,764:INFO:Defining folds
+2023-11-02 15:39:34,764:INFO:Declaring metric variables
+2023-11-02 15:39:34,764:INFO:Importing untrained model
+2023-11-02 15:39:34,764:INFO:Declaring custom model
+2023-11-02 15:39:34,764:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:39:34,785:INFO:Starting cross validation
+2023-11-02 15:39:34,787:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:39:41,693:INFO:Calculating mean and std
+2023-11-02 15:39:41,694:INFO:Creating metrics dataframe
+2023-11-02 15:39:41,694:INFO:Finalizing model
+2023-11-02 15:39:43,775:INFO:Uploading results into container
+2023-11-02 15:39:43,777:INFO:Uploading model into container now
+2023-11-02 15:39:43,778:INFO:_master_model_container: 8
+2023-11-02 15:39:43,778:INFO:_display_container: 6
+2023-11-02 15:39:43,780:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:39:43,781:INFO:create_model() successfully completed......................................
+2023-11-02 15:39:43,914:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:39:43,914:INFO:choose_better activated
+2023-11-02 15:39:43,915:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:39:43,915:INFO:Initializing create_model()
+2023-11-02 15:39:43,915:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-11-02 15:39:43,915:INFO:Checking exceptions
+2023-11-02 15:39:43,915:INFO:Importing libraries
+2023-11-02 15:39:43,915:INFO:Copying training dataset
+2023-11-02 15:39:43,929:INFO:Defining folds
+2023-11-02 15:39:43,929:INFO:Declaring metric variables
+2023-11-02 15:39:43,929:INFO:Importing untrained model
+2023-11-02 15:39:43,929:INFO:Declaring custom model
+2023-11-02 15:39:43,929:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:39:43,929:INFO:Starting cross validation
+2023-11-02 15:39:43,929:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:39:52,393:INFO:Calculating mean and std
+2023-11-02 15:39:52,393:INFO:Creating metrics dataframe
+2023-11-02 15:39:52,393:INFO:Finalizing model
+2023-11-02 15:39:54,611:INFO:Uploading results into container
+2023-11-02 15:39:54,611:INFO:Uploading model into container now
+2023-11-02 15:39:54,611:INFO:_master_model_container: 9
+2023-11-02 15:39:54,611:INFO:_display_container: 7
+2023-11-02 15:39:54,611:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:39:54,611:INFO:create_model() successfully completed......................................
+2023-11-02 15:39:54,713:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:39:54,713:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8141
+2023-11-02 15:39:54,713:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight='balanced',
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8132
+2023-11-02 15:39:54,713:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) is best model
+2023-11-02 15:39:54,713:INFO:choose_better completed
+2023-11-02 15:39:54,713:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-02 15:39:54,729:INFO:_master_model_container: 9
+2023-11-02 15:39:54,729:INFO:_display_container: 6
+2023-11-02 15:39:54,738:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:39:54,738:INFO:tune_model() successfully completed......................................
+2023-11-02 15:40:42,095:INFO:Initializing tune_model()
+2023-11-02 15:40:42,096:INFO:tune_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=5, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>)
+2023-11-02 15:40:42,096:INFO:Checking exceptions
+2023-11-02 15:40:42,127:INFO:Copying training dataset
+2023-11-02 15:40:42,148:INFO:Checking base model
+2023-11-02 15:40:42,148:INFO:Base model : Random Forest Classifier
+2023-11-02 15:40:42,155:INFO:Declaring metric variables
+2023-11-02 15:40:42,161:INFO:Defining Hyperparameters
+2023-11-02 15:40:42,337:INFO:Tuning with n_jobs=-1
+2023-11-02 15:40:42,337:INFO:Initializing RandomizedSearchCV
+2023-11-02 15:41:41,225:INFO:best_params: {'actual_estimator__n_estimators': 120, 'actual_estimator__min_samples_split': 5, 'actual_estimator__min_samples_leaf': 6, 'actual_estimator__min_impurity_decrease': 0.001, 'actual_estimator__max_features': 'log2', 'actual_estimator__max_depth': 4, 'actual_estimator__criterion': 'entropy', 'actual_estimator__class_weight': {}, 'actual_estimator__bootstrap': False}
+2023-11-02 15:41:41,227:INFO:Hyperparameter search completed
+2023-11-02 15:41:41,227:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:41:41,227:INFO:Initializing create_model()
+2023-11-02 15:41:41,227:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000274B9AB0D30>, model_only=True, return_train_score=False, kwargs={'n_estimators': 120, 'min_samples_split': 5, 'min_samples_leaf': 6, 'min_impurity_decrease': 0.001, 'max_features': 'log2', 'max_depth': 4, 'criterion': 'entropy', 'class_weight': {}, 'bootstrap': False})
+2023-11-02 15:41:41,227:INFO:Checking exceptions
+2023-11-02 15:41:41,227:INFO:Importing libraries
+2023-11-02 15:41:41,227:INFO:Copying training dataset
+2023-11-02 15:41:41,244:INFO:Defining folds
+2023-11-02 15:41:41,244:INFO:Declaring metric variables
+2023-11-02 15:41:41,247:INFO:Importing untrained model
+2023-11-02 15:41:41,247:INFO:Declaring custom model
+2023-11-02 15:41:41,247:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:41:41,264:INFO:Starting cross validation
+2023-11-02 15:41:41,266:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:41:44,878:INFO:Calculating mean and std
+2023-11-02 15:41:44,878:INFO:Creating metrics dataframe
+2023-11-02 15:41:44,878:INFO:Finalizing model
+2023-11-02 15:41:45,821:INFO:Uploading results into container
+2023-11-02 15:41:45,821:INFO:Uploading model into container now
+2023-11-02 15:41:45,823:INFO:_master_model_container: 10
+2023-11-02 15:41:45,823:INFO:_display_container: 7
+2023-11-02 15:41:45,823:INFO:RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=4, max_features='log2',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.001, min_samples_leaf=6,
+                       min_samples_split=5, min_weight_fraction_leaf=0.0,
+                       n_estimators=120, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:41:45,823:INFO:create_model() successfully completed......................................
+2023-11-02 15:41:45,946:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:41:45,946:INFO:choose_better activated
+2023-11-02 15:41:45,952:INFO:SubProcess create_model() called ==================================
+2023-11-02 15:41:45,953:INFO:Initializing create_model()
+2023-11-02 15:41:45,953:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), fold=StratifiedKFold(n_splits=5, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-11-02 15:41:45,953:INFO:Checking exceptions
+2023-11-02 15:41:45,955:INFO:Importing libraries
+2023-11-02 15:41:45,955:INFO:Copying training dataset
+2023-11-02 15:41:45,964:INFO:Defining folds
+2023-11-02 15:41:45,964:INFO:Declaring metric variables
+2023-11-02 15:41:45,964:INFO:Importing untrained model
+2023-11-02 15:41:45,964:INFO:Declaring custom model
+2023-11-02 15:41:45,964:INFO:Random Forest Classifier Imported successfully
+2023-11-02 15:41:45,964:INFO:Starting cross validation
+2023-11-02 15:41:45,964:INFO:Cross validating with StratifiedKFold(n_splits=5, random_state=None, shuffle=False), n_jobs=-1
+2023-11-02 15:41:53,932:INFO:Calculating mean and std
+2023-11-02 15:41:53,932:INFO:Creating metrics dataframe
+2023-11-02 15:41:53,934:INFO:Finalizing model
+2023-11-02 15:41:56,011:INFO:Uploading results into container
+2023-11-02 15:41:56,011:INFO:Uploading model into container now
+2023-11-02 15:41:56,011:INFO:_master_model_container: 11
+2023-11-02 15:41:56,011:INFO:_display_container: 8
+2023-11-02 15:41:56,011:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:41:56,011:INFO:create_model() successfully completed......................................
+2023-11-02 15:41:56,110:INFO:SubProcess create_model() end ==================================
+2023-11-02 15:41:56,110:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8141
+2023-11-02 15:41:56,110:INFO:RandomForestClassifier(bootstrap=False, ccp_alpha=0.0, class_weight={},
+                       criterion='entropy', max_depth=4, max_features='log2',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.001, min_samples_leaf=6,
+                       min_samples_split=5, min_weight_fraction_leaf=0.0,
+                       n_estimators=120, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) result for Accuracy is 0.8096
+2023-11-02 15:41:56,110:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False) is best model
+2023-11-02 15:41:56,110:INFO:choose_better completed
+2023-11-02 15:41:56,110:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2023-11-02 15:41:56,131:INFO:_master_model_container: 11
+2023-11-02 15:41:56,131:INFO:_display_container: 7
+2023-11-02 15:41:56,131:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False)
+2023-11-02 15:41:56,131:INFO:tune_model() successfully completed......................................
+2023-11-02 15:42:12,048:INFO:Initializing plot_model()
+2023-11-02 15:42:12,049:INFO:plot_model(plot=parameter, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:42:12,049:INFO:Checking exceptions
+2023-11-02 15:42:12,152:INFO:Preloading libraries
+2023-11-02 15:42:12,269:INFO:Copying training dataset
+2023-11-02 15:42:12,269:INFO:Plot type: parameter
+2023-11-02 15:42:12,274:INFO:Visual Rendered Successfully
+2023-11-02 15:42:12,410:INFO:plot_model() successfully completed......................................
+2023-11-02 15:42:15,181:INFO:Initializing plot_model()
+2023-11-02 15:42:15,181:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:42:15,182:INFO:Checking exceptions
+2023-11-02 15:42:15,241:INFO:Preloading libraries
+2023-11-02 15:42:15,350:INFO:Copying training dataset
+2023-11-02 15:42:15,351:INFO:Plot type: auc
+2023-11-02 15:42:15,681:INFO:Fitting Model
+2023-11-02 15:42:15,682:INFO:Scoring test/hold-out set
+2023-11-02 15:42:16,314:INFO:Visual Rendered Successfully
+2023-11-02 15:42:16,463:INFO:plot_model() successfully completed......................................
+2023-11-02 15:43:08,814:INFO:Initializing plot_model()
+2023-11-02 15:43:08,814:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:43:08,815:INFO:Checking exceptions
+2023-11-02 15:43:08,864:INFO:Preloading libraries
+2023-11-02 15:43:08,966:INFO:Copying training dataset
+2023-11-02 15:43:08,966:INFO:Plot type: confusion_matrix
+2023-11-02 15:43:09,297:INFO:Fitting Model
+2023-11-02 15:43:09,297:INFO:Scoring test/hold-out set
+2023-11-02 15:43:09,609:INFO:Visual Rendered Successfully
+2023-11-02 15:43:09,711:INFO:plot_model() successfully completed......................................
+2023-11-02 15:43:12,428:INFO:Initializing plot_model()
+2023-11-02 15:43:12,428:INFO:plot_model(plot=class_report, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:43:12,428:INFO:Checking exceptions
+2023-11-02 15:43:12,470:INFO:Preloading libraries
+2023-11-02 15:43:12,556:INFO:Copying training dataset
+2023-11-02 15:43:12,557:INFO:Plot type: class_report
+2023-11-02 15:43:12,794:INFO:Fitting Model
+2023-11-02 15:43:12,794:INFO:Scoring test/hold-out set
+2023-11-02 15:43:13,258:INFO:Visual Rendered Successfully
+2023-11-02 15:43:13,365:INFO:plot_model() successfully completed......................................
+2023-11-02 15:43:34,251:INFO:Initializing plot_model()
+2023-11-02 15:43:34,251:INFO:plot_model(plot=threshold, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:43:34,251:INFO:Checking exceptions
+2023-11-02 15:43:34,305:INFO:Preloading libraries
+2023-11-02 15:43:34,390:INFO:Copying training dataset
+2023-11-02 15:43:34,390:INFO:Plot type: threshold
+2023-11-02 15:43:34,644:INFO:Fitting Model
+2023-11-02 15:45:05,831:INFO:Scoring test/hold-out set
+2023-11-02 15:45:06,323:INFO:Visual Rendered Successfully
+2023-11-02 15:45:06,427:INFO:plot_model() successfully completed......................................
+2023-11-02 15:45:31,821:INFO:Initializing plot_model()
+2023-11-02 15:45:31,821:INFO:plot_model(plot=pr, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:45:31,821:INFO:Checking exceptions
+2023-11-02 15:45:31,864:INFO:Preloading libraries
+2023-11-02 15:45:31,962:INFO:Copying training dataset
+2023-11-02 15:45:31,962:INFO:Plot type: pr
+2023-11-02 15:45:32,228:INFO:Fitting Model
+2023-11-02 15:45:32,244:INFO:Scoring test/hold-out set
+2023-11-02 15:45:32,661:INFO:Visual Rendered Successfully
+2023-11-02 15:45:32,796:INFO:plot_model() successfully completed......................................
+2023-11-02 15:45:48,530:INFO:Initializing plot_model()
+2023-11-02 15:45:48,530:INFO:plot_model(plot=boundary, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:45:48,530:INFO:Checking exceptions
+2023-11-02 15:45:48,563:INFO:Preloading libraries
+2023-11-02 15:45:48,658:INFO:Copying training dataset
+2023-11-02 15:45:48,658:INFO:Plot type: boundary
+2023-11-02 15:45:48,792:INFO:Fitting StandardScaler()
+2023-11-02 15:45:48,811:INFO:Fitting PCA()
+2023-11-02 15:45:49,094:INFO:Fitting Model
+2023-11-02 15:45:52,252:INFO:Visual Rendered Successfully
+2023-11-02 15:45:52,444:INFO:plot_model() successfully completed......................................
+2023-11-02 15:46:03,311:INFO:Initializing plot_model()
+2023-11-02 15:46:03,311:INFO:plot_model(plot=learning, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:46:03,311:INFO:Checking exceptions
+2023-11-02 15:46:03,351:INFO:Preloading libraries
+2023-11-02 15:46:03,432:INFO:Copying training dataset
+2023-11-02 15:46:03,432:INFO:Plot type: learning
+2023-11-02 15:46:03,678:INFO:Fitting Model
+2023-11-02 15:47:48,178:INFO:Visual Rendered Successfully
+2023-11-02 15:47:48,328:INFO:plot_model() successfully completed......................................
+2023-11-02 15:47:48,421:INFO:Initializing plot_model()
+2023-11-02 15:47:48,421:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=555, verbose=0, warm_start=False), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000274C34508E0>, system=True)
+2023-11-02 15:47:48,421:INFO:Checking exceptions
+2023-11-02 15:47:48,489:INFO:Preloading libraries
+2023-11-02 15:47:48,589:INFO:Copying training dataset
+2023-11-02 15:47:48,589:INFO:Plot type: feature
+2023-11-02 15:47:48,590:WARNING:No coef_ found. Trying feature_importances_
+2023-11-02 15:47:48,862:INFO:Visual Rendered Successfully
+2023-11-02 15:47:48,989:INFO:plot_model() successfully completed......................................
