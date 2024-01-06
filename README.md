@@ -30,7 +30,7 @@ Pedram is one of the project mentors at the [Analytics Solutions Center](https:/
 
 
 
-## 🎲 Topics covered
+## 🎲 Topics covered (Spring 2024)
 
 
 | Machine Learning Topics                                                                              |
