@@ -1,7 +1,7 @@
 ![ML cover](https://user-images.githubusercontent.com/19335954/210504261-55016ce4-6d1e-4f32-9077-6af513d9f924.png)
 
 
-# Machine Learning
+# Machine Learning (2024-2025)
 
 Repository for machine learning courses owned and maintained by prof. Jahangiry
 
