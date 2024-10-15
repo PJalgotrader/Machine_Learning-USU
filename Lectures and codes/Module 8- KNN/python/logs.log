@@ -346,3 +346,414 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2024-10-15 09:49:34,696:INFO:Fitting Model
 2024-10-15 09:49:35,035:INFO:Visual Rendered Successfully
 2024-10-15 09:49:35,096:INFO:plot_model() successfully completed......................................
+2024-10-15 09:53:53,948:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 09:53:53,948:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 09:53:53,948:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 09:53:53,948:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-15 09:53:54,882:INFO:PyCaret ClassificationExperiment
+2024-10-15 09:53:54,882:INFO:Logging name: clf-default-name
+2024-10-15 09:53:54,882:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-15 09:53:54,882:INFO:version 3.3.2
+2024-10-15 09:53:54,882:INFO:Initializing setup()
+2024-10-15 09:53:54,882:INFO:self.USI: 281c
+2024-10-15 09:53:54,882:INFO:self._variable_keys: {'fix_imbalance', '_ml_usecase', 'target_param', 'y', 'X', 'idx', 'html_param', 'is_multiclass', 'logging_param', 'seed', 'n_jobs_param', 'exp_name_log', 'fold_generator', 'fold_groups_param', 'gpu_param', 'gpu_n_jobs_param', 'USI', 'data', 'pipeline', 'X_train', 'memory', 'y_test', 'log_plots_param', 'y_train', 'exp_id', 'fold_shuffle_param', '_available_plots', 'X_test'}
+2024-10-15 09:53:54,882:INFO:Checking environment
+2024-10-15 09:53:54,882:INFO:python_version: 3.11.9
+2024-10-15 09:53:54,882:INFO:python_build: ('main', 'Apr 19 2024 16:40:41')
+2024-10-15 09:53:54,882:INFO:machine: AMD64
+2024-10-15 09:53:54,882:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-15 09:53:54,886:INFO:Memory: svmem(total=68479676416, available=49483939840, percent=27.7, used=18995736576, free=49483939840)
+2024-10-15 09:53:54,886:INFO:Physical Core: 24
+2024-10-15 09:53:54,886:INFO:Logical Core: 32
+2024-10-15 09:53:54,886:INFO:Checking libraries
+2024-10-15 09:53:54,886:INFO:System:
+2024-10-15 09:53:54,886:INFO:    python: 3.11.9 | packaged by Anaconda, Inc. | (main, Apr 19 2024, 16:40:41) [MSC v.1916 64 bit (AMD64)]
+2024-10-15 09:53:54,886:INFO:executable: c:\Users\pedram\anaconda3\envs\deep_forecasting\python.exe
+2024-10-15 09:53:54,886:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-15 09:53:54,886:INFO:PyCaret required dependencies:
+2024-10-15 09:53:55,473:INFO:                 pip: 24.0
+2024-10-15 09:53:55,473:INFO:          setuptools: 69.5.1
+2024-10-15 09:53:55,473:INFO:             pycaret: 3.3.2
+2024-10-15 09:53:55,473:INFO:             IPython: 8.28.0
+2024-10-15 09:53:55,473:INFO:          ipywidgets: 8.1.3
+2024-10-15 09:53:55,473:INFO:                tqdm: 4.66.4
+2024-10-15 09:53:55,473:INFO:               numpy: 1.26.4
+2024-10-15 09:53:55,473:INFO:              pandas: 2.1.4
+2024-10-15 09:53:55,473:INFO:              jinja2: 3.1.4
+2024-10-15 09:53:55,473:INFO:               scipy: 1.11.4
+2024-10-15 09:53:55,473:INFO:              joblib: 1.3.2
+2024-10-15 09:53:55,473:INFO:             sklearn: 1.4.2
+2024-10-15 09:53:55,473:INFO:                pyod: 2.0.0
+2024-10-15 09:53:55,473:INFO:            imblearn: 0.12.3
+2024-10-15 09:53:55,473:INFO:   category_encoders: 2.6.3
+2024-10-15 09:53:55,473:INFO:            lightgbm: 4.3.0
+2024-10-15 09:53:55,473:INFO:               numba: 0.59.1
+2024-10-15 09:53:55,473:INFO:            requests: 2.32.3
+2024-10-15 09:53:55,473:INFO:          matplotlib: 3.7.5
+2024-10-15 09:53:55,473:INFO:          scikitplot: 0.3.7
+2024-10-15 09:53:55,473:INFO:         yellowbrick: 1.5
+2024-10-15 09:53:55,473:INFO:              plotly: 5.22.0
+2024-10-15 09:53:55,473:INFO:    plotly-resampler: Not installed
+2024-10-15 09:53:55,473:INFO:             kaleido: 0.2.1
+2024-10-15 09:53:55,473:INFO:           schemdraw: 0.15
+2024-10-15 09:53:55,473:INFO:         statsmodels: 0.14.2
+2024-10-15 09:53:55,473:INFO:              sktime: 0.26.0
+2024-10-15 09:53:55,473:INFO:               tbats: 1.1.3
+2024-10-15 09:53:55,473:INFO:            pmdarima: 2.0.4
+2024-10-15 09:53:55,473:INFO:              psutil: 6.0.0
+2024-10-15 09:53:55,473:INFO:          markupsafe: 3.0.1
+2024-10-15 09:53:55,473:INFO:             pickle5: Not installed
+2024-10-15 09:53:55,473:INFO:         cloudpickle: 3.0.0
+2024-10-15 09:53:55,473:INFO:         deprecation: 2.1.0
+2024-10-15 09:53:55,473:INFO:              xxhash: 3.4.1
+2024-10-15 09:53:55,473:INFO:           wurlitzer: Not installed
+2024-10-15 09:53:55,474:INFO:PyCaret optional dependencies:
+2024-10-15 09:53:57,124:INFO:                shap: 0.44.1
+2024-10-15 09:53:57,124:INFO:           interpret: 0.6.1
+2024-10-15 09:53:57,124:INFO:                umap: 0.5.6
+2024-10-15 09:53:57,124:INFO:     ydata_profiling: 4.8.3
+2024-10-15 09:53:57,124:INFO:  explainerdashboard: 0.4.7
+2024-10-15 09:53:57,124:INFO:             autoviz: Not installed
+2024-10-15 09:53:57,124:INFO:           fairlearn: 0.7.0
+2024-10-15 09:53:57,124:INFO:          deepchecks: Not installed
+2024-10-15 09:53:57,124:INFO:             xgboost: Not installed
+2024-10-15 09:53:57,124:INFO:            catboost: 1.2.5
+2024-10-15 09:53:57,124:INFO:              kmodes: 0.12.2
+2024-10-15 09:53:57,124:INFO:             mlxtend: 0.23.1
+2024-10-15 09:53:57,124:INFO:       statsforecast: 1.5.0
+2024-10-15 09:53:57,124:INFO:        tune_sklearn: Not installed
+2024-10-15 09:53:57,124:INFO:                 ray: Not installed
+2024-10-15 09:53:57,124:INFO:            hyperopt: 0.2.7
+2024-10-15 09:53:57,124:INFO:              optuna: 3.6.1
+2024-10-15 09:53:57,124:INFO:               skopt: 0.10.2
+2024-10-15 09:53:57,124:INFO:              mlflow: 2.13.1
+2024-10-15 09:53:57,124:INFO:              gradio: 4.32.2
+2024-10-15 09:53:57,124:INFO:             fastapi: 0.111.0
+2024-10-15 09:53:57,124:INFO:             uvicorn: 0.30.1
+2024-10-15 09:53:57,124:INFO:              m2cgen: 0.10.0
+2024-10-15 09:53:57,124:INFO:           evidently: 0.4.25
+2024-10-15 09:53:57,124:INFO:               fugue: 0.8.7
+2024-10-15 09:53:57,124:INFO:           streamlit: 1.39.0
+2024-10-15 09:53:57,124:INFO:             prophet: Not installed
+2024-10-15 09:53:57,124:INFO:None
+2024-10-15 09:53:57,124:INFO:Set up data.
+2024-10-15 09:53:57,126:INFO:Set up folding strategy.
+2024-10-15 09:53:57,126:INFO:Set up train/test split.
+2024-10-15 09:53:57,128:INFO:Set up index.
+2024-10-15 09:53:57,128:INFO:Assigning column types.
+2024-10-15 09:53:57,129:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-10-15 09:53:57,159:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-15 09:53:57,160:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-15 09:53:57,177:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,177:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,208:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-10-15 09:53:57,208:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-15 09:53:57,220:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,220:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,221:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-10-15 09:53:57,240:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-15 09:53:57,253:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,253:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,273:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-10-15 09:53:57,285:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,285:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,286:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-10-15 09:53:57,317:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,317:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,350:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,350:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,352:INFO:Preparing preprocessing pipeline...
+2024-10-15 09:53:57,352:INFO:Set up simple imputation.
+2024-10-15 09:53:57,353:INFO:Set up encoding of ordinal features.
+2024-10-15 09:53:57,354:INFO:Set up encoding of categorical features.
+2024-10-15 09:53:57,371:INFO:Finished creating preprocessing pipeline.
+2024-10-15 09:53:57,377:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\pedram\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Age', 'EstimatedSalary'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='mean'))),
+                ('categorical_imputer',
+                 TransformerWrapper...
+                                                              missing_values=nan,
+                                                              strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(exclude=None, include=['Gender'],
+                                    transformer=OrdinalEncoder(cols=['Gender'],
+                                                               drop_invariant=False,
+                                                               handle_missing='return_nan',
+                                                               handle_unknown='value',
+                                                               mapping=[{'col': 'Gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Female    0
+Male      1
+NaN      -1
+dtype: int64}],
+                                                               return_df=True,
+                                                               verbose=0)))],
+         verbose=False)
+2024-10-15 09:53:57,377:INFO:Creating final display dataframe.
+2024-10-15 09:53:57,427:INFO:Setup _display_container:                     Description             Value
+0                    Session id               555
+1                        Target         Purchased
+2                   Target type            Binary
+3           Original data shape          (400, 5)
+4        Transformed data shape          (400, 4)
+5   Transformed train set shape          (280, 4)
+6    Transformed test set shape          (120, 4)
+7               Ignore features                 1
+8              Numeric features                 2
+9          Categorical features                 1
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16               Fold Generator   StratifiedKFold
+17                  Fold Number                10
+18                     CPU Jobs                -1
+19                      Use GPU             False
+20               Log Experiment             False
+21              Experiment Name  clf-default-name
+22                          USI              281c
+2024-10-15 09:53:57,462:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,462:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,494:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,494:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,495:INFO:setup() successfully completed in 2.61s...............
+2024-10-15 09:53:57,501:INFO:gpu_param set to False
+2024-10-15 09:53:57,533:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,534:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,567:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-10-15 09:53:57,568:INFO:Soft dependency imported: catboost: 1.2.5
+2024-10-15 09:53:57,574:INFO:Initializing create_model()
+2024-10-15 09:53:57,574:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=knn, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-15 09:53:57,574:INFO:Checking exceptions
+2024-10-15 09:53:57,582:INFO:Importing libraries
+2024-10-15 09:53:57,582:INFO:Copying training dataset
+2024-10-15 09:53:57,584:INFO:Defining folds
+2024-10-15 09:53:57,584:INFO:Declaring metric variables
+2024-10-15 09:53:57,588:INFO:Importing untrained model
+2024-10-15 09:53:57,589:INFO:K Neighbors Classifier Imported successfully
+2024-10-15 09:53:57,592:INFO:Starting cross validation
+2024-10-15 09:53:57,593:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-15 09:54:01,760:INFO:Calculating mean and std
+2024-10-15 09:54:01,761:INFO:Creating metrics dataframe
+2024-10-15 09:54:01,765:INFO:Finalizing model
+2024-10-15 09:54:01,778:INFO:Uploading results into container
+2024-10-15 09:54:01,779:INFO:Uploading model into container now
+2024-10-15 09:54:01,784:INFO:_master_model_container: 1
+2024-10-15 09:54:01,784:INFO:_display_container: 2
+2024-10-15 09:54:01,784:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2024-10-15 09:54:01,784:INFO:create_model() successfully completed......................................
+2024-10-15 09:54:01,871:INFO:Initializing tune_model()
+2024-10-15 09:54:01,871:INFO:tune_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), fold=None, round=4, n_iter=10, custom_grid=None, optimize=Accuracy, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={})
+2024-10-15 09:54:01,871:INFO:Checking exceptions
+2024-10-15 09:54:01,878:INFO:Copying training dataset
+2024-10-15 09:54:01,880:INFO:Checking base model
+2024-10-15 09:54:01,880:INFO:Base model : K Neighbors Classifier
+2024-10-15 09:54:01,882:INFO:Declaring metric variables
+2024-10-15 09:54:01,884:INFO:Defining Hyperparameters
+2024-10-15 09:54:01,959:INFO:Tuning with n_jobs=-1
+2024-10-15 09:54:01,959:INFO:Initializing RandomizedSearchCV
+2024-10-15 09:54:07,513:INFO:best_params: {'actual_estimator__weights': 'distance', 'actual_estimator__n_neighbors': 17, 'actual_estimator__metric': 'minkowski'}
+2024-10-15 09:54:07,514:INFO:Hyperparameter search completed
+2024-10-15 09:54:07,514:INFO:SubProcess create_model() called ==================================
+2024-10-15 09:54:07,515:INFO:Initializing create_model()
+2024-10-15 09:54:07,515:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001FA983A55D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'weights': 'distance', 'n_neighbors': 17, 'metric': 'minkowski'})
+2024-10-15 09:54:07,515:INFO:Checking exceptions
+2024-10-15 09:54:07,515:INFO:Importing libraries
+2024-10-15 09:54:07,515:INFO:Copying training dataset
+2024-10-15 09:54:07,517:INFO:Defining folds
+2024-10-15 09:54:07,517:INFO:Declaring metric variables
+2024-10-15 09:54:07,519:INFO:Importing untrained model
+2024-10-15 09:54:07,519:INFO:Declaring custom model
+2024-10-15 09:54:07,521:INFO:K Neighbors Classifier Imported successfully
+2024-10-15 09:54:07,525:INFO:Starting cross validation
+2024-10-15 09:54:07,526:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-15 09:54:07,614:INFO:Calculating mean and std
+2024-10-15 09:54:07,615:INFO:Creating metrics dataframe
+2024-10-15 09:54:07,617:INFO:Finalizing model
+2024-10-15 09:54:07,628:INFO:Uploading results into container
+2024-10-15 09:54:07,629:INFO:Uploading model into container now
+2024-10-15 09:54:07,629:INFO:_master_model_container: 2
+2024-10-15 09:54:07,629:INFO:_display_container: 3
+2024-10-15 09:54:07,629:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=17, p=2,
+                     weights='distance')
+2024-10-15 09:54:07,629:INFO:create_model() successfully completed......................................
+2024-10-15 09:54:07,704:INFO:SubProcess create_model() end ==================================
+2024-10-15 09:54:07,704:INFO:choose_better activated
+2024-10-15 09:54:07,705:INFO:SubProcess create_model() called ==================================
+2024-10-15 09:54:07,706:INFO:Initializing create_model()
+2024-10-15 09:54:07,706:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-10-15 09:54:07,706:INFO:Checking exceptions
+2024-10-15 09:54:07,706:INFO:Importing libraries
+2024-10-15 09:54:07,707:INFO:Copying training dataset
+2024-10-15 09:54:07,708:INFO:Defining folds
+2024-10-15 09:54:07,708:INFO:Declaring metric variables
+2024-10-15 09:54:07,708:INFO:Importing untrained model
+2024-10-15 09:54:07,708:INFO:Declaring custom model
+2024-10-15 09:54:07,708:INFO:K Neighbors Classifier Imported successfully
+2024-10-15 09:54:07,708:INFO:Starting cross validation
+2024-10-15 09:54:07,709:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-10-15 09:54:07,787:INFO:Calculating mean and std
+2024-10-15 09:54:07,787:INFO:Creating metrics dataframe
+2024-10-15 09:54:07,787:INFO:Finalizing model
+2024-10-15 09:54:07,797:INFO:Uploading results into container
+2024-10-15 09:54:07,797:INFO:Uploading model into container now
+2024-10-15 09:54:07,797:INFO:_master_model_container: 3
+2024-10-15 09:54:07,797:INFO:_display_container: 4
+2024-10-15 09:54:07,797:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2024-10-15 09:54:07,797:INFO:create_model() successfully completed......................................
+2024-10-15 09:54:07,869:INFO:SubProcess create_model() end ==================================
+2024-10-15 09:54:07,870:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform') result for Accuracy is 0.7857
+2024-10-15 09:54:07,870:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=17, p=2,
+                     weights='distance') result for Accuracy is 0.7786
+2024-10-15 09:54:07,870:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform') is best model
+2024-10-15 09:54:07,870:INFO:choose_better completed
+2024-10-15 09:54:07,870:INFO:Original model was better than the tuned model, hence it will be returned. NOTE: The display metrics are for the tuned model (not the original one).
+2024-10-15 09:54:07,875:INFO:_master_model_container: 3
+2024-10-15 09:54:07,875:INFO:_display_container: 3
+2024-10-15 09:54:07,875:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2024-10-15 09:54:07,875:INFO:tune_model() successfully completed......................................
+2024-10-15 09:54:07,964:INFO:Initializing plot_model()
+2024-10-15 09:54:07,964:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=parameter, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:07,964:INFO:Checking exceptions
+2024-10-15 09:54:07,966:INFO:Preloading libraries
+2024-10-15 09:54:07,966:INFO:Copying training dataset
+2024-10-15 09:54:07,966:INFO:Plot type: parameter
+2024-10-15 09:54:07,968:INFO:Visual Rendered Successfully
+2024-10-15 09:54:08,047:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:08,056:INFO:Initializing plot_model()
+2024-10-15 09:54:08,057:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=auc, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:08,057:INFO:Checking exceptions
+2024-10-15 09:54:08,058:INFO:Preloading libraries
+2024-10-15 09:54:08,059:INFO:Copying training dataset
+2024-10-15 09:54:08,059:INFO:Plot type: auc
+2024-10-15 09:54:08,111:INFO:Fitting Model
+2024-10-15 09:54:08,130:INFO:Scoring test/hold-out set
+2024-10-15 09:54:08,282:INFO:Visual Rendered Successfully
+2024-10-15 09:54:08,357:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:08,364:INFO:Initializing plot_model()
+2024-10-15 09:54:08,364:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=threshold, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:08,364:INFO:Checking exceptions
+2024-10-15 09:54:08,366:INFO:Preloading libraries
+2024-10-15 09:54:08,366:INFO:Copying training dataset
+2024-10-15 09:54:08,366:INFO:Plot type: threshold
+2024-10-15 09:54:08,421:INFO:Fitting Model
+2024-10-15 09:54:09,352:INFO:Scoring test/hold-out set
+2024-10-15 09:54:09,523:INFO:Visual Rendered Successfully
+2024-10-15 09:54:09,597:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:12,027:INFO:Initializing plot_model()
+2024-10-15 09:54:12,027:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=pr, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:12,027:INFO:Checking exceptions
+2024-10-15 09:54:12,028:INFO:Preloading libraries
+2024-10-15 09:54:12,029:INFO:Copying training dataset
+2024-10-15 09:54:12,029:INFO:Plot type: pr
+2024-10-15 09:54:12,080:INFO:Fitting Model
+2024-10-15 09:54:12,098:INFO:Scoring test/hold-out set
+2024-10-15 09:54:12,228:INFO:Visual Rendered Successfully
+2024-10-15 09:54:12,300:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:15,187:INFO:Initializing plot_model()
+2024-10-15 09:54:15,187:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=confusion_matrix, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:15,187:INFO:Checking exceptions
+2024-10-15 09:54:15,189:INFO:Preloading libraries
+2024-10-15 09:54:15,189:INFO:Copying training dataset
+2024-10-15 09:54:15,189:INFO:Plot type: confusion_matrix
+2024-10-15 09:54:15,241:INFO:Fitting Model
+2024-10-15 09:54:15,257:INFO:Scoring test/hold-out set
+2024-10-15 09:54:15,359:INFO:Visual Rendered Successfully
+2024-10-15 09:54:15,435:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:16,322:INFO:Initializing plot_model()
+2024-10-15 09:54:16,322:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=class_report, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:16,322:INFO:Checking exceptions
+2024-10-15 09:54:16,323:INFO:Preloading libraries
+2024-10-15 09:54:16,324:INFO:Copying training dataset
+2024-10-15 09:54:16,324:INFO:Plot type: class_report
+2024-10-15 09:54:16,377:INFO:Fitting Model
+2024-10-15 09:54:16,395:INFO:Scoring test/hold-out set
+2024-10-15 09:54:16,541:INFO:Visual Rendered Successfully
+2024-10-15 09:54:16,613:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:17,419:INFO:Initializing plot_model()
+2024-10-15 09:54:17,419:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=boundary, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:17,419:INFO:Checking exceptions
+2024-10-15 09:54:17,421:INFO:Preloading libraries
+2024-10-15 09:54:17,421:INFO:Copying training dataset
+2024-10-15 09:54:17,421:INFO:Plot type: boundary
+2024-10-15 09:54:17,449:INFO:Fitting StandardScaler()
+2024-10-15 09:54:17,450:INFO:Fitting PCA()
+2024-10-15 09:54:17,476:INFO:Fitting Model
+2024-10-15 09:54:20,193:INFO:Visual Rendered Successfully
+2024-10-15 09:54:20,281:INFO:plot_model() successfully completed......................................
+2024-10-15 09:54:22,178:INFO:Initializing plot_model()
+2024-10-15 09:54:22,178:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001FA95976810>, estimator=KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform'), plot=learning, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-10-15 09:54:22,179:INFO:Checking exceptions
+2024-10-15 09:54:22,180:INFO:Preloading libraries
+2024-10-15 09:54:22,180:INFO:Copying training dataset
+2024-10-15 09:54:22,180:INFO:Plot type: learning
+2024-10-15 09:54:22,234:INFO:Fitting Model
+2024-10-15 09:54:22,591:INFO:Visual Rendered Successfully
+2024-10-15 09:54:22,667:INFO:plot_model() successfully completed......................................
