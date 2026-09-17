@@ -1,0 +1,24 @@
+# conda alternative to the uv setup. Keep the pip list identical to pyproject.toml.
+#   conda env create -f environment.yml
+#   conda activate ml_pycaret
+name: ml_pycaret
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+  - pip:
+      - pycaret-core==3.5.0      # not available on conda-forge
+      - statsmodels>=0.14,<0.15
+      - lightgbm>=4.0
+      - xgboost>=2.0
+      - catboost>=1.2
+      - shap>=0.46
+      - kmodes>=0.12
+      - pca>=2.0
+      - seaborn>=0.13
+      - yfinance
+      - openpyxl

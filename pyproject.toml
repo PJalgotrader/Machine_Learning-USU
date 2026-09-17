@@ -1,0 +1,27 @@
+[project]
+name = "machine-learning-course"
+version = "1.0.0"
+description = "The one local Python environment for the Machine Learning course notebooks."
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "pycaret-core==3.5.0",       # community-maintained continuation of PyCaret 3 (same `import pycaret`)
+    "statsmodels>=0.14,<0.15",   # statsmodels 0.15 breaks the ETS model in the PyCaret time series demos
+    "lightgbm>=4.0",
+    "xgboost>=2.0",
+    "catboost>=1.2",
+    "shap>=0.46",                # interpret_model
+    "kmodes>=0.12",              # Module 12: K-modes / K-prototypes
+    "pca>=2.0",                  # Module 11: the pca package
+    "seaborn>=0.13",
+    "yfinance",
+    "openpyxl",
+    "jupyterlab>=4",
+    "ipykernel",
+    "ipywidgets>=8",
+]
+
+[tool.uv]
+package = false
+# On Windows uv otherwise builds the venv on an Anaconda Python found on PATH, and Anaconda's
+# bundled DLLs break compiled packages inside notebooks.
+python-preference = "only-managed"

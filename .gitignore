@@ -1,0 +1,12 @@
+# local environments
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# files PyCaret / CatBoost write next to a notebook when it runs
+logs.log
+catboost_info/
+*.stackdump
+
+# working notes, not course material
+pycaret_migration.md

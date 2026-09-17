@@ -7,6 +7,15 @@ Here is the link to my YouTube playlist for PyCaret! https://youtube.com/playlis
 4. PyCaret timeseries
 
 
+## Installing PyCaret
+
+The original `pycaret` package is no longer maintained and does not run on current Python versions (including Google Colab), so the install command shown in the older videos no longer works. These notebooks use **`pycaret-core`**, the community-maintained continuation of PyCaret 3. The code is unchanged: you still write `import pycaret`.
+
+* **Google Colab:** run the install cell at the top of each notebook. It runs
+  `pip install pycaret-core lightgbm xgboost catboost shap`
+  (the time series notebooks add `"statsmodels<0.15"`).
+* **Your own computer:** follow the [setup guide](https://github.com/PJalgotrader/Machine_Learning-USU#setup) once; the install cell then does nothing.
+
 
 ## 🔗 Links
 
