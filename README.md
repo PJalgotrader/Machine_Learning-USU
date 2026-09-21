@@ -13,7 +13,7 @@ Every notebook runs in three ways: on **Google Colab** with nothing to install, 
 | Folder | Content |
 |---|---|
 | [Lectures and codes](Lectures%20and%20codes) | One folder per module: the lecture slides (PDF) and the Python notebooks |
-| [Platforms and tools](Platforms%20and%20tools) | Google Colab jumpstart and the PyCaret demos (regression, classification, time series) |
+| [Platforms and tools](Platforms%20and%20tools) | Google Colab jumpstart, the PyCaret demos (regression, classification, time series), and the [uv quick start](Platforms%20and%20tools/uv/) (cheat sheet + ten-second test) |
 | [data](data) | The datasets used in the notebooks |
 | [Cheatsheets](Cheatsheets) | Python, pandas, statistics, probability and machine learning cheatsheets |
 
@@ -70,9 +70,9 @@ Start from a fresh runtime (**Runtime > Disconnect and delete runtime**) if you 
 
 ### Option 2: your own computer with uv (recommended)
 
-[uv](https://docs.astral.sh/uv/) installs Python and all the packages for you, in a folder inside this repository. It does not touch any Python or Anaconda you already have.
+[uv](https://docs.astral.sh/uv/) installs Python and all the packages for you, in a folder inside this repository. It does not touch any Python or Anaconda you already have. New to uv? Start with [`Platforms and tools/uv/`](Platforms%20and%20tools/uv/): a quick start, the conda-to-uv cheat sheet, and a ten-second test project. The same folder, and the same commands, are used in the Deep Learning and Deep Forecasting courses.
 
-1. Install uv ([instructions](https://docs.astral.sh/uv/getting-started/installation/)).
+1. Install uv ([instructions](https://docs.astral.sh/uv/getting-started/installation/)), then reopen the terminal and check `uv --version`.
 
    Windows (PowerShell):
    ```
@@ -82,12 +82,13 @@ Start from a fresh runtime (**Runtime > Disconnect and delete runtime**) if you 
    ```
    curl -LsSf https://astral.sh/uv/install.sh | sh
    ```
-2. Get the repository and build the environment:
+2. Get the repository (clone into a normal local folder, not inside Google Drive or OneDrive) and build the environment:
    ```
    git clone https://github.com/PJalgotrader/Machine_Learning-USU.git
    cd Machine_Learning-USU
    uv sync
    ```
+   Optional first: the ten-second test in `Platforms and tools/uv/simple_test` (`uv sync`, then `uv run python main.py`) prints your Python and pandas versions and `uv is working!`.
 3. Check it:
    ```
    uv run python scripts/check_environment.py

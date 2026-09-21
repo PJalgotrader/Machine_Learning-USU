@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conda → uv: Simple Student Cheat Sheet</title>
+  <style>
+    :root{
+      --bg:#f7f8fa;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --accent:#2563eb;
+      --code:#0f172a;
+      --code-text:#e5e7eb;
+      --tip:#ecfdf5;
+      --tip-border:#10b981;
+      --warn:#fffbeb;
+      --warn-border:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      line-height:1.6;
+    }
+    .wrap{
+      max-width:980px;
+      margin:0 auto;
+      padding:40px 20px 64px;
+    }
+    h1{
+      font-size:clamp(2rem,5vw,3.3rem);
+      line-height:1.05;
+      margin:0 0 12px;
+    }
+    h2{
+      margin-top:0;
+      font-size:1.5rem;
+    }
+    h3{
+      margin-bottom:8px;
+    }
+    .subtitle{
+      color:var(--muted);
+      font-size:1.08rem;
+      margin-bottom:28px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:24px;
+      margin:18px 0;
+      box-shadow:0 3px 12px rgba(15,23,42,.04);
+    }
+    .badge{
+      display:inline-block;
+      color:#1d4ed8;
+      background:#dbeafe;
+      border-radius:999px;
+      padding:5px 10px;
+      font-size:.85rem;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    code{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+    }
+    pre{
+      margin:10px 0 0;
+      padding:16px;
+      overflow:auto;
+      border-radius:12px;
+      background:var(--code);
+      color:var(--code-text);
+      font-size:.93rem;
+      line-height:1.5;
+    }
+    pre .c{color:#94a3b8}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:12px;
+      font-size:.96rem;
+    }
+    th,td{
+      border-bottom:1px solid var(--line);
+      padding:11px 10px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{
+      background:#f9fafb;
+    }
+    .tip{
+      background:var(--tip);
+      border-left:4px solid var(--tip-border);
+      padding:16px 18px;
+      border-radius:10px;
+      margin-top:16px;
+    }
+    .warn{
+      background:var(--warn);
+      border-left:4px solid var(--warn-border);
+      padding:16px 18px;
+      border-radius:10px;
+      margin-top:16px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:16px;
+    }
+    .mini{
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:16px;
+      background:#fff;
+    }
+    .mini h3{margin-top:0}
+    ul{
+      padding-left:22px;
+    }
+    .small{
+      font-size:.92rem;
+      color:var(--muted);
+    }
+    .toc{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:4px 24px;
+      padding-left:22px;
+      margin:0;
+      font-size:.95rem;
+    }
+    .toc a{color:var(--accent);text-decoration:none}
+    .toc a:hover{text-decoration:underline}
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      margin-top:34px;
+      font-size:.9rem;
+    }
+    @media (max-width:760px){
+      .grid,.toc{grid-template-columns:1fr}
+      .wrap{padding-top:24px}
+      .card{padding:18px}
+      table{font-size:.9rem}
+    }
+    @media print{
+      @page{size:Letter;margin:.45in}
+      body{background:#fff}
+      .wrap{max-width:none;padding:0}
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+      .card{box-shadow:none;margin:10px 0;padding:16px;break-inside:avoid-page}
+      h2{font-size:1.35rem}
+      h2,h3{break-after:avoid-page}
+      pre,.tip,.warn,.mini,table,tr{break-inside:avoid-page}
+      p,li{orphans:3;widows:3}
+      pre{padding:12px;font-size:.86rem;line-height:1.4;white-space:pre-wrap;overflow-wrap:anywhere}
+      .footer{margin-top:24px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="badge">Student Cheat Sheet</div>
+    <h1>Moving from Conda to uv</h1>
+    <p class="subtitle">
+      A plain-language guide to uv for people who have only used Conda (or nothing at all): what the files mean, the commands you need, how to update things, and how to fix it when it breaks.
+    </p>
+
+    <section class="card">
+      <h2>Contents</h2>
+      <ol class="toc">
+        <li><a href="#what">What is uv?</a></li>
+        <li><a href="#install">Install uv (and update it later)</a></li>
+        <li><a href="#files">The three files: pyproject.toml, uv.lock, .python-version</a></li>
+        <li><a href="#situations">The two situations you will be in</a></li>
+        <li><a href="#cheatsheet">Conda → uv cheat sheet</a></li>
+        <li><a href="#everyday">Everyday commands</a></li>
+        <li><a href="#updating">Updating packages and Python</a></li>
+        <li><a href="#python">Managing Python versions</a></li>
+        <li><a href="#jupyter">Jupyter, VS Code and Cursor</a></li>
+        <li><a href="#disk">Ten projects, ten environments?</a></li>
+        <li><a href="#fix">When something breaks</a></li>
+        <li><a href="#course">This course's project</a></li>
+        <li><a href="#remember">Commands to remember</a></li>
+        <li><a href="#rules">Simple rules</a></li>
+      </ol>
+    </section>
+
+    <section class="card" id="what">
+      <h2>1. What is uv?</h2>
+      <p>
+        <strong>uv</strong> is a fast Python package and environment manager. It does the jobs you used
+        <strong>Conda + pip + virtualenv</strong> for, in one tool, and it also downloads Python itself.
+      </p>
+      <p>The mental model, translated from Conda:</p>
+      <table>
+        <thead>
+          <tr><th>Conda idea</th><th>uv equivalent</th><th>What it is</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A named environment (<code>conda activate myproj</code>)</td><td>A <code>.venv/</code> folder <em>inside the project</em></td><td>The actual installed packages. Lives next to your code, not in a central list.</td></tr>
+          <tr><td><code>environment.yml</code></td><td><code>pyproject.toml</code></td><td>The list of packages you asked for. Short, human-written.</td></tr>
+          <tr><td>(no standard equivalent)</td><td><code>uv.lock</code></td><td>The exact version of every package that got installed, including the ones you never typed. Machine-written.</td></tr>
+          <tr><td><code>conda install python=3.12</code></td><td><code>.python-version</code></td><td>One line saying which Python this project uses.</td></tr>
+        </tbody>
+      </table>
+      <div class="tip">
+        <strong>Main idea:</strong> a uv project is a folder with a <code>pyproject.toml</code>, a <code>uv.lock</code>,
+        and a <code>.venv</code> that uv builds from them. You almost never "activate" anything; you run
+        <code>uv run ...</code> and uv uses the right environment automatically.
+      </div>
+    </section>
+
+    <section class="card" id="install">
+      <h2>2. Install uv (and update it later)</h2>
+      <div class="grid">
+        <div class="mini">
+          <h3>Windows</h3>
+          <p>Open <strong>PowerShell</strong> and run:</p>
+          <pre><code>powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"</code></pre>
+          <p class="small">Then close and reopen PowerShell. (Alternative: <code>winget install astral-sh.uv</code>)</p>
+        </div>
+
+        <div class="mini">
+          <h3>macOS / Linux</h3>
+          <p>Open <strong>Terminal</strong> and run:</p>
+          <pre><code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></pre>
+          <p class="small">Then close and reopen Terminal. (Alternative on macOS: <code>brew install uv</code>)</p>
+        </div>
+      </div>
+
+      <h3>Check that it worked</h3>
+      <pre><code>uv --version</code></pre>
+
+      <h3>Update uv itself</h3>
+      <p>uv releases often. If you installed it with the commands above:</p>
+      <pre><code>uv self update</code></pre>
+      <p class="small">
+        If you installed it with winget or Homebrew instead, update it the same way you installed it:
+        <code>winget upgrade astral-sh.uv</code> or <code>brew upgrade uv</code>. uv will tell you if
+        <code>self update</code> is not the right tool.
+      </p>
+      <div class="tip">
+        Updating uv does <strong>not</strong> change any of your projects. Package versions are decided by
+        <code>uv.lock</code>, not by the uv version.
+      </div>
+    </section>
+
+    <section class="card" id="files">
+      <h2>3. The three files, explained</h2>
+
+      <h3>pyproject.toml — "what I want"</h3>
+      <p>
+        A short text file you can read and edit. It names the project, says which Python versions it supports, and
+        lists the packages you asked for. This is a course repository's real one, trimmed:
+      </p>
+      <pre><code>[project]
+name = "course-environment"
+version = "2026.9"
+requires-python = ">=3.13,&lt;3.14"      <span class="c"># which Python this project needs</span>
+dependencies = [
+    "pycaret-core==3.5.0",           <span class="c"># exactly this version</span>
+    "statsmodels>=0.14,&lt;0.15",       <span class="c"># any 0.14.x</span>
+    "lightgbm>=4.0",                 <span class="c"># 4.0 or newer</span>
+    "jupyterlab>=4",
+]</code></pre>
+      <p>
+        <strong>You do not usually edit this by hand.</strong> <code>uv add pandas</code> writes the line for you and
+        <code>uv remove pandas</code> deletes it. The version rules (<code>==</code>, <code>>=</code>, <code>&lt;</code>)
+        are the same ones pip uses.
+      </p>
+
+      <h3>uv.lock — "what I actually got"</h3>
+      <p>
+        When uv installs your dependencies, each one pulls in its own dependencies, and those pull in more. A request
+        for 7 packages can install 165. <code>uv.lock</code> records the exact version of <em>every one of them</em>,
+        for every operating system, so that a classmate running <code>uv sync</code> next month gets byte-for-byte the
+        same environment you have today.
+      </p>
+      <ul>
+        <li>It is generated by uv. <strong>Never edit it by hand.</strong></li>
+        <li>It is long and looks scary. You never need to read it.</li>
+        <li><strong>Commit it to Git.</strong> That is the whole point: the lock file is what makes the project reproducible.</li>
+        <li>Conda has nothing like it by default, which is why "it works on my machine" happens more with Conda.</li>
+      </ul>
+
+      <h3>.python-version — "which Python"</h3>
+      <p>
+        One line, for example <code>3.13</code>. uv reads it and uses (or downloads) that Python for the project.
+        Change it with <code>uv python pin 3.14</code>, not with a text editor, so uv can check it is valid.
+      </p>
+
+      <h3>And .venv/ — the built environment</h3>
+      <p>
+        The folder with the installed packages. It is disposable: delete it any time and <code>uv sync</code> rebuilds
+        it from the two files above in seconds.
+      </p>
+
+      <pre><code>my-project/
+├── .venv/              <span class="c">← built by uv, do NOT commit</span>
+├── .python-version     <span class="c">← commit</span>
+├── pyproject.toml      <span class="c">← commit</span>
+├── uv.lock             <span class="c">← commit</span>
+└── main.py</code></pre>
+    </section>
+
+    <section class="card" id="situations">
+      <h2>4. The two situations you will be in</h2>
+      <div class="grid">
+        <div class="mini">
+          <h3>A. Someone gives you a project (this course)</h3>
+          <p>The project already has <code>pyproject.toml</code> and <code>uv.lock</code>. You do not create anything, you rebuild it:</p>
+          <pre><code>git clone https://github.com/PJalgotrader/&lt;course-repo&gt;.git
+cd &lt;course-repo&gt;
+uv sync
+uv run jupyter lab</code></pre>
+          <p class="small"><code>&lt;course-repo&gt;</code> is <code>Machine_Learning-USU</code>, <code>Deep_Learning-USU</code> or <code>Deep_forecasting-USU</code>. All three work the same way. First <code>uv sync</code> also downloads Python 3.13 if you do not have it. Later ones take seconds.</p>
+        </div>
+        <div class="mini">
+          <h3>B. You start your own project</h3>
+          <p>You create the files, then add packages one by one:</p>
+          <pre><code>mkdir my-project
+cd my-project
+uv init --python 3.13
+uv add numpy pandas scikit-learn matplotlib
+uv add --dev jupyterlab ipykernel
+uv run python</code></pre>
+          <p class="small"><code>uv init</code> creates <code>pyproject.toml</code>, <code>.python-version</code>, a <code>.gitignore</code>, a <code>README.md</code> and a starter <code>src/</code> folder. Only the first two matter to you.</p>
+        </div>
+      </div>
+      <div class="tip">
+        <strong>Never run <code>uv init</code> inside a project that already has a <code>pyproject.toml</code>.</strong>
+        If the files are there, the only command you need is <code>uv sync</code>.
+      </div>
+    </section>
+
+    <section class="card" id="cheatsheet">
+      <h2>5. Conda → uv cheat sheet</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Conda</th>
+            <th>uv</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Create project/environment</td><td><code>conda create -n myproj python=3.13</code></td><td><code>uv init --python 3.13</code></td></tr>
+          <tr><td>Rebuild from a file</td><td><code>conda env create -f environment.yml</code></td><td><code>uv sync</code></td></tr>
+          <tr><td>Activate environment</td><td><code>conda activate myproj</code></td><td>Not needed, use <code>uv run</code></td></tr>
+          <tr><td>Add a package</td><td><code>conda install pandas</code></td><td><code>uv add pandas</code></td></tr>
+          <tr><td>Add a dev-only tool</td><td><code>conda install jupyterlab</code></td><td><code>uv add --dev jupyterlab</code></td></tr>
+          <tr><td>Remove a package</td><td><code>conda remove pandas</code></td><td><code>uv remove pandas</code></td></tr>
+          <tr><td>Update one package</td><td><code>conda update pandas</code></td><td><code>uv lock --upgrade-package pandas</code> then <code>uv sync</code></td></tr>
+          <tr><td>Update everything</td><td><code>conda update --all</code></td><td><code>uv lock --upgrade</code> then <code>uv sync</code></td></tr>
+          <tr><td>Run Python</td><td><code>python</code></td><td><code>uv run python</code></td></tr>
+          <tr><td>Run a script</td><td><code>python app.py</code></td><td><code>uv run python app.py</code></td></tr>
+          <tr><td>Install a Python version</td><td>Managed by Conda</td><td><code>uv python install 3.13</code></td></tr>
+          <tr><td>Change the project's Python</td><td><code>conda install python=3.14</code></td><td><code>uv python pin 3.14</code> then <code>uv sync</code></td></tr>
+          <tr><td>List installed packages</td><td><code>conda list</code></td><td><code>uv pip list</code> (or <code>uv tree</code> to see who depends on what)</td></tr>
+          <tr><td>Export the environment</td><td><code>conda env export</code></td><td>Nothing to do: <code>pyproject.toml</code> + <code>uv.lock</code> already are the export</td></tr>
+          <tr><td>Delete the environment</td><td><code>conda env remove -n myproj</code></td><td>Delete the <code>.venv</code> folder</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="everyday">
+      <h2>6. Everyday commands</h2>
+      <pre><code>uv add pandas                <span class="c"># add a package (writes pyproject.toml + uv.lock, installs it)</span>
+uv add "pandas>=2.2"         <span class="c"># add with a version rule</span>
+uv add --dev pytest ruff     <span class="c"># tools you need while developing, not to run the code</span>
+uv remove pandas             <span class="c"># the opposite of add</span>
+uv sync                      <span class="c"># make .venv match pyproject.toml + uv.lock</span>
+uv run python script.py      <span class="c"># run anything inside the project's environment</span>
+uv run jupyter lab           <span class="c"># same idea, for Jupyter</span>
+uv tree                      <span class="c"># show the dependency tree</span></code></pre>
+      <div class="tip">
+        Prefer <code>uv add package-name</code> over <code>pip install package-name</code>. <code>uv add</code>
+        records the package in the project files so everyone else gets it too. <code>pip install</code> changes only
+        your machine and nobody else will know.
+      </div>
+      <p class="small">
+        If you really want a classic activated shell, it still works: <code>.venv\Scripts\activate</code> on Windows,
+        <code>source .venv/bin/activate</code> on macOS/Linux. Then plain <code>python</code> and <code>jupyter</code>
+        point at the project. Most people stop needing this once <code>uv run</code> becomes a habit.
+      </p>
+    </section>
+
+    <section class="card" id="updating">
+      <h2>7. Updating packages and Python</h2>
+      <p>
+        Because of <code>uv.lock</code>, nothing updates by itself. <code>uv sync</code> always installs the locked
+        versions. To move forward you change the lock on purpose, then sync.
+      </p>
+      <table>
+        <thead><tr><th>You want to…</th><th>Run</th></tr></thead>
+        <tbody>
+          <tr><td>Update one package to its newest allowed version</td><td><code>uv lock --upgrade-package pandas</code><br><code>uv sync</code></td></tr>
+          <tr><td>Update every package</td><td><code>uv lock --upgrade</code><br><code>uv sync</code></td></tr>
+          <tr><td>Change the rule for a package (for example allow pandas 3)</td><td><code>uv add "pandas>=3"</code></td></tr>
+          <tr><td>Move the project to a newer Python</td><td><code>uv python pin 3.14</code><br><code>uv sync</code></td></tr>
+          <tr><td>Get a classmate's changes after <code>git pull</code></td><td><code>uv sync</code></td></tr>
+          <tr><td>Update uv itself</td><td><code>uv self update</code></td></tr>
+        </tbody>
+      </table>
+      <div class="warn">
+        <strong>Careful in a shared project.</strong> <code>uv lock --upgrade</code> rewrites <code>uv.lock</code>.
+        In this course, that file is maintained by the instructor. Run upgrades in your own projects, not in
+        the course repository, or you will drift away from what the notebooks were tested on.
+      </div>
+    </section>
+
+    <section class="card" id="python">
+      <h2>8. Managing Python versions</h2>
+      <p>uv downloads Python for you. No python.org installer, no Anaconda needed.</p>
+      <pre><code>uv python list                <span class="c"># what is installed, what is available</span>
+uv python install 3.13        <span class="c"># download a version (once, shared by all projects)</span>
+uv python pin 3.13            <span class="c"># write .python-version for THIS project</span>
+uv run python --version       <span class="c"># confirm which one the project uses</span></code></pre>
+      <p class="small">
+        Different projects can use different Pythons. The downloaded versions live in one shared place; each project
+        just points at one of them.
+      </p>
+    </section>
+
+    <section class="card" id="jupyter">
+      <h2>9. Jupyter, VS Code and Cursor</h2>
+      <p>Add Jupyter support to a project (already done in the course project):</p>
+      <pre><code>uv add --dev jupyterlab ipykernel</code></pre>
+
+      <p>Run Jupyter:</p>
+      <pre><code>uv run jupyter lab</code></pre>
+
+      <h3>VS Code / Cursor, notebooks inside the project folder</h3>
+      <p>
+        Open the project folder as your workspace. In a notebook click <strong>Select Kernel → Python Environments</strong>
+        and pick the interpreter inside <code>your-project/.venv</code>. VS Code usually finds it on its own.
+      </p>
+
+      <h3>VS Code / Cursor, notebooks somewhere else (this course)</h3>
+      <p>
+        The course's <code>.venv</code> sits at the top of the repository while the notebooks live in the Module folders. Register the
+        environment once as a named kernel, and it shows up in every notebook, wherever it is:
+      </p>
+      <pre><code>cd &lt;course-repo&gt;
+uv run python -m ipykernel install --user --name &lt;kernel-name&gt; --display-name "&lt;display name&gt;"</code></pre>
+      <table>
+        <thead><tr><th>Course repository</th><th>kernel-name</th><th>display name</th></tr></thead>
+        <tbody>
+          <tr><td><code>Machine_Learning-USU</code></td><td><code>ml-course</code></td><td><code>Python 3.13 (ML course)</code></td></tr>
+          <tr><td><code>Deep_Learning-USU</code></td><td><code>deep-learning</code></td><td><code>Python 3.13 (Deep Learning)</code></td></tr>
+          <tr><td><code>Deep_forecasting-USU</code></td><td><code>deep-forecasting</code></td><td><code>Python 3.13 (Deep Forecasting)</code></td></tr>
+        </tbody>
+      </table>
+      <p>Then in any notebook: <strong>Select Kernel → Jupyter Kernel → </strong> the display name above.</p>
+    </section>
+
+    <section class="card" id="disk">
+      <h2>10. What about 10 projects = 10 virtual environments?</h2>
+      <p>
+        Yes. If you have 10 separate projects, you normally have 10 separate <code>.venv</code> folders.
+        This is intentional because each project is isolated.
+      </p>
+      <p>
+        It is not as wasteful as it looks. uv keeps a <strong>global package cache</strong> and links files from it
+        instead of downloading and copying everything again for every project. Ten projects that all use pandas share
+        one downloaded copy.
+      </p>
+      <pre><code>uv cache dir      <span class="c"># where the cache lives</span>
+uv cache prune    <span class="c"># remove entries no project uses any more (safe)</span>
+uv cache clean    <span class="c"># delete the whole cache (safe, next sync re-downloads)</span></code></pre>
+      <div class="tip">
+        <strong>Why isolation is good:</strong> upgrading NumPy, PyTorch, or pandas for Project B will not accidentally
+        break Project A.
+      </div>
+    </section>
+
+    <section class="card" id="fix">
+      <h2>11. When something breaks</h2>
+      <table>
+        <thead><tr><th>Symptom</th><th>What it means</th><th>Fix</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><code>ModuleNotFoundError: No module named 'pycaret'</code> but you installed it</td>
+            <td>You ran a different Python (the system one, or Conda's base), not the project's</td>
+            <td>Use <code>uv run python ...</code>, or pick the <code>.venv</code> kernel in VS Code</td>
+          </tr>
+          <tr>
+            <td>Environment feels broken or confusing</td>
+            <td>Something got installed by hand, or half-finished</td>
+            <td>Delete <code>.venv</code>, then <code>uv sync</code>. Nothing is lost: the recipe is in the two files</td>
+          </tr>
+          <tr>
+            <td>Still broken after that</td>
+            <td>Cached package is corrupt</td>
+            <td><code>uv sync --reinstall</code></td>
+          </tr>
+          <tr>
+            <td>Windows: <code>Failed to persist temporary file ... os error 3</code></td>
+            <td>Folder path too long (Windows 260-character limit)</td>
+            <td>Move the project to a short path such as <code>C:\dev\my-project</code></td>
+          </tr>
+          <tr>
+            <td>Project lives in OneDrive / Google Drive and everything is slow</td>
+            <td>The sync client is uploading thousands of <code>.venv</code> files</td>
+            <td>Keep projects outside synced folders, or exclude <code>.venv</code> from sync</td>
+          </tr>
+          <tr>
+            <td><code>uv add</code> says versions conflict</td>
+            <td>Two packages cannot agree on a shared dependency</td>
+            <td>Read the last lines of the message, they name the two packages. Loosen one rule, or leave that package out</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Delete the environment</h3>
+      <p><strong>Windows PowerShell:</strong></p>
+      <pre><code>Remove-Item -Recurse -Force .venv</code></pre>
+      <p><strong>macOS / Linux:</strong></p>
+      <pre><code>rm -rf .venv</code></pre>
+      <p class="small">
+        Deleting <code>.venv</code> does <strong>not</strong> delete your project or dependency list.
+      </p>
+
+      <h3>The escape hatch</h3>
+      <p>
+        <code>uv pip install something</code> installs into the project's <code>.venv</code> the pip way, without
+        touching <code>pyproject.toml</code> or <code>uv.lock</code>. Useful for a quick experiment. Not recorded, so
+        the next <code>uv sync</code> may remove it, and classmates will not get it. For anything you want to keep,
+        use <code>uv add</code>.
+      </p>
+    </section>
+
+    <section class="card" id="course">
+      <h2>12. A course repository, start to finish</h2>
+      <p class="small">Same steps in all three course repositories. Kernel names are in section 9.</p>
+      <pre><code><span class="c"># ten-second test (optional, once per computer)</span>
+cd &lt;course-repo&gt;/"Platforms and tools/uv/simple_test"
+uv sync
+uv run python main.py         <span class="c"># prints your Python version, your pandas version, "uv is working!"</span>
+
+<span class="c"># once</span>
+cd &lt;course-repo&gt;
+uv sync
+uv run python -m ipykernel install --user --name &lt;kernel-name&gt; --display-name "&lt;display name&gt;"
+
+<span class="c"># every time</span>
+uv run jupyter lab            <span class="c"># or open a notebook in VS Code and pick the display name</span>
+
+<span class="c"># check</span>
+uv run python scripts/check_environment.py   <span class="c"># ends with "Your course environment is ready."</span></code></pre>
+      <p class="small">
+        Do not run <code>uv add</code>, <code>uv remove</code>, or <code>uv lock --upgrade</code> in the course repository
+        unless the instructor asks. The lock file is what makes your leaderboard match the one in the lecture.
+      </p>
+    </section>
+
+    <section class="card" id="remember">
+      <h2>13. The 12 commands to remember</h2>
+      <pre><code>uv sync                          <span class="c"># build / rebuild the environment from the project files</span>
+uv run python app.py             <span class="c"># run inside the environment</span>
+uv run jupyter lab
+uv init --python 3.13            <span class="c"># start a NEW project</span>
+uv add pandas                    <span class="c"># add a package</span>
+uv add --dev jupyterlab          <span class="c"># add a development tool</span>
+uv remove pandas
+uv lock --upgrade-package pandas <span class="c"># update one package (then uv sync)</span>
+uv python install 3.13
+uv python pin 3.13
+uv tree                          <span class="c"># who depends on what</span>
+uv self update                   <span class="c"># update uv</span></code></pre>
+    </section>
+
+    <section class="card" id="rules">
+      <h2>14. Simple rules</h2>
+      <ol>
+        <li>One real project → one <code>.venv</code>.</li>
+        <li>Got a project with a <code>uv.lock</code>? Run <code>uv sync</code>, nothing else.</li>
+        <li>Use <code>uv add</code> instead of <code>pip install</code>.</li>
+        <li>Use <code>uv run</code> instead of relying on environment activation.</li>
+        <li>Commit <code>pyproject.toml</code>, <code>uv.lock</code> and <code>.python-version</code>.</li>
+        <li>Do not commit <code>.venv</code>. Never edit <code>uv.lock</code> by hand.</li>
+        <li>Use <code>--dev</code> for Jupyter, testing, and development tools.</li>
+        <li>Updates are deliberate: <code>uv lock --upgrade...</code> then <code>uv sync</code>.</li>
+        <li>If the environment gets messy, delete <code>.venv</code> and run <code>uv sync</code>.</li>
+        <li>Keep Conda only when you truly need unusual non-Python/system packages.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Bonus: instruction for AI coding assistants</h2>
+      <p>You can place this in <code>CLAUDE.md</code> or <code>AGENTS.md</code>:</p>
+      <pre><code>This project uses uv for Python dependency and environment management.
+Use `uv add` / `uv remove` for dependencies and `uv run` for commands.
+Do not use pip or Conda unless explicitly requested. Never edit uv.lock by hand.</code></pre>
+    </section>
+
+    <p class="footer">
+      Conda → uv Student Guide · Pedram Jahangiry's Machine Learning, Deep Learning and Deep Forecasting courses, Utah State University
+    </p>
+  </main>
+</body>
+</html>
