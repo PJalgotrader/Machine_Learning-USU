@@ -120,7 +120,7 @@ In VS Code, the `ml_pycaret` environment shows up under **Select Kernel > Python
 
 ### What the environment contains
 
-Python 3.13 with `pycaret-core`, scikit-learn, pandas, NumPy, statsmodels, Matplotlib, seaborn, LightGBM, XGBoost, CatBoost, shap, kmodes, pca, yfinance and JupyterLab. The exact versions are locked in [uv.lock](uv.lock) and exported to [requirements.txt](requirements.txt). The package list lives in [pyproject.toml](pyproject.toml) (uv) and [environment.yml](environment.yml) (conda).
+Python 3.13 with `pycaret-core`, scikit-learn, pandas, NumPy, statsmodels, Matplotlib, seaborn, LightGBM, XGBoost, CatBoost, shap, kmodes, pca, yfinance and JupyterLab. The exact versions are locked in [uv.lock](uv.lock). The package list lives in [pyproject.toml](pyproject.toml) (uv) and [environment.yml](environment.yml) (conda).
 
 The automated EDA notebook in Module 2 (`pandas-profiling`, `sweetviz`, `dtale`) is not part of this environment. Run that one on Colab.
 
