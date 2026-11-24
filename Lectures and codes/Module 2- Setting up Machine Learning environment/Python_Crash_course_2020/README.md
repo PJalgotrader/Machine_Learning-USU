@@ -20,5 +20,5 @@ Here is the link to my YouTube playlist for Python Crash course! https://www.you
 
 [![Youtube](https://img.shields.io/badge/youtube_channel-1DA1F2?style=for-the-badge&logo=youtube&logoColor=white&color=FF0000)](https://www.youtube.com/channel/UCNDElcuuyX-2pSatVBDpJJQ)
 
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/PedramJahangiry.svg?style=social&label=Follow%20%40PedramJahangiry)](https://twitter.com/PedramJahangiry)
+[![Twitter URL](https://img.shields.io/twitter/url/https/x.com/pjalgo.svg?style=social&label=Follow%20%40pjalgo)](https://x.com/pjalgo)
 
